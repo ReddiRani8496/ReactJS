@@ -1,0 +1,32 @@
+What is Babel?
+
+Babel is a JavaScript compiler that allows developers to write code using the latest JavaScript features and then transpile that code into a version that is compatible with older browsers.
+This ensures that modern JavaScript code can run in environments that do not yet support the latest language features.
+
+Why it is useful?
+
+While building React with JSX syntax. 
+Becuase JSX is not valid JavaScript and needs to be transformed into standard JavaScript that browsers can understand.
+Babel is used to perform this transformation.
+
+-> Even when our system does not support node.js, we are not able to create react-app. 
+-> In such scenarios we can user Babel module to create react-app
+
+Steps to create react-app using Babel module:
+=============================================
+
+Step1: import 3 modules i.e. react , react-dom, Babel
+
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+step2: Create a div element inside the body and give an id, it act as an react root container
+
+step3: add script tag before closing the body tag, the type of tag is "text/babel"
+
+step4: inside the script tag create the react component.
+
+step5: select the react root container and add to react-dom 
+
+stpe6: render the react component

@@ -1,0 +1,10 @@
+Why we need env file?
+=====================
+
+By default the port number for react is 3000.
+If we need to change the port to our choice, we can define the port number in .env file
+
+steps:
+=====
+-> create .env file in the app
+-> PORT=4000; // replace 4000 with your desired port number

@@ -1,0 +1,25 @@
+props is nothing but parameter inside a react component.
+It acts like a object and stores mutiple properties.
+
+<App Name="john" age="20" email="john@gmail.com" />
+
+in the above line we are passing the values to a component. 
+Generally a variable stores only one value, here we hare 3 values, to store 3 values we need three parameters,
+but using props we can store all 3 values.
+
+function App(props) {
+    <h1>props.name</h1> 
+    <h1>props.age</h1>
+    <h1>props.email</h1>
+}
+
+internally props store the data as:
+
+let props = {
+    name:"john",
+    age:"20",
+    email:"john@example.com"
+}
+
+so to access name we will use object name followed by dot notation. 
+-> props.name; // it will the return john

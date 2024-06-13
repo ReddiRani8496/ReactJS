@@ -1,0 +1,21 @@
+$headingColor: blue;
+$bgColor: black;
+$textColor: white;
+
+h1 {
+  color: $textColor;
+  background-color: $bgColor;
+}
+
+h2 {
+  color: $textColor;
+  background-color: $bgColor;
+}
+
+h3 {
+  color: $headingColor;
+}
+
+h4 {
+  color: $headingColor;
+}

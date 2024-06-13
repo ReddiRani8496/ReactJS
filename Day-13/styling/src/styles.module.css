@@ -1,0 +1,6 @@
+.heading {
+  background-color: lightgray;
+}
+.heading:first {
+  color: red;
+}

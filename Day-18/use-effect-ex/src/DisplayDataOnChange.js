@@ -7,6 +7,12 @@ function DisplayDataOnChange() {
     console.log(data);
   }, [data]);
 
+  let [date, setDate] = useState(new Date());
+  useEffect(() => {
+    setDate(new Date());
+    console.log(date);
+  }, [date]);
+
   return (
     <div>
       <input

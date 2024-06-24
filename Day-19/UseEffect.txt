@@ -1,0 +1,28 @@
+UseEffect:
+=========
+
+=> The UseEffect hook in React is used to perform the side effects such as fetching data,
+   updating the DOM, and timers.
+
+=> UseEffect accepts two arguments: a function(the effect) and an optional array of dependencies.
+
+=> Without dependencies, the useEffect runs on every render.
+   
+    useEffect(() => {
+        //Runs on every render
+    });
+
+=> To run it only once, pass an empty array of dependencies.
+  
+    useEffect(() => {
+        //Runs only on the first render
+    }, []);
+
+=> If a variable is passed as a dependency, the effect will run again whenever that variable updates.
+
+    useEffect(() => {
+        //Runs on the first render
+        //And any time any dependency value changes
+    }, [variable]); 
+
+ 

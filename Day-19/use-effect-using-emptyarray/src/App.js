@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     setCount((count) => count + 1);
-  }); // this will render infinite times
+  }, []); // this will only one time,  mounting stage
 
   return (
     <div className="App">

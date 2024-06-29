@@ -1,0 +1,12 @@
+UseRef:
+=====
+Use Reference does not cause re-renders when it's value changes.
+When we want a component to remember some information, but you don't want that information to trigger new renders.
+
+const num = useRef(0);
+
+useRef is just like object internally num value is
+
+const num = {
+    current:0;
+}

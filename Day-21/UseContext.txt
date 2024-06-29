@@ -1,0 +1,84 @@
+Let's say there are 4 components:
+
+App   Component A    Component B Component C Component D
+
+In App Component Username initalized, that username needed for componenent D.
+
+one way to use is:
+
+in app componenent send as props to D.
+
+<ComponentD name={username}/>
+
+But the requirement is first App componenent should execute, next A, B, C at last D componenent.
+To share in that order we can use props
+
+App Component:
+=============
+
+import "./App.css";
+import React from "react";
+import A from "./A";
+
+function App() {
+  const [name, setName] = useState("Rahul");
+  return (
+    <div className="App box">
+        <A  name={name}/>
+    </div>
+  );
+}
+
+export default App;
+
+A Component:
+===========
+import React, { useContext } from "react";
+import B from "./B";
+
+export default function A(name) {
+  return (
+    <>
+      <h1>Hi from A {name}</h1>
+      <B name={name}/>
+    </>
+  );
+}
+
+so on so upto C Component.
+
+D Component:
+===========
+import React, { useContext } from "react";
+
+export default function D(name) {
+  return (
+    <>
+      <h1>Hi from D {name}</h1>
+    </>
+  );
+}
+
+Now it's ok to share as props, let's say there are millions of components it's dificult to use props.
+The better approach is using use Effect.
+
+
+
+USECONTEXT:
+==========
+
+Usecontext hook allows to share values between multiple levels of components without passing props throught each level.
+
+Provider Component:
+==================
+1. import {createContext} from 'react';
+2. export const MyContext = createContext();
+3. <MyContext.Provider value={value} >
+        <Child />
+    </MyContext.Provider>
+
+Consumer Component:
+==================
+1. import React, {useContext} from 'react';
+   import {MyContext} from './App';
+2. const value = useContext(MyContext);

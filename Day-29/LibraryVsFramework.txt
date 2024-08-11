@@ -1,0 +1,10 @@
+Library:
+Which has less rules where we can easily fit into our code.
+
+Framework:
+which has more rules, and we have to follow those guidelines in our code.
+
+Example:
+
+Our home is like a Library, we can keep our things wherever we want.
+Our school is like a Framework, where we can't keep everything where we want.There are certain rules.

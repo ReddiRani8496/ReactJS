@@ -1,0 +1,27 @@
+React
+=====
+Purpose: 
+=======
+React is a JavaScript library used for building user interfaces, particularly for single-page applications. 
+It focuses on the "view" layer of an application, allowing developers to create reusable UI components that efficiently update and render as data changes.
+
+Functionality: 
+==============
+React provides the core functionality for defining components, managing state and props, and handling lifecycle methods.
+It uses a virtual DOM to optimize rendering performance.
+
+
+ReactDOM
+=========
+Purpose: 
+========
+ReactDOM is a library that provides DOM-specific methods that allow React to interact with the browser's Document Object Model (DOM).
+
+Functionality: 
+==============
+It is responsible for rendering React components to the DOM. 
+ReactDOM includes methods like ReactDOM.render() to mount React components to a specified DOM node, and ReactDOM.hydrate() for server-side rendering.
+
+
+React is the core library for building UI components, while ReactDOM is responsible for rendering those components to the web page.
+React can be used independently of the DOM, such as in React Native for mobile apps, whereas ReactDOM is specifically for web applications.

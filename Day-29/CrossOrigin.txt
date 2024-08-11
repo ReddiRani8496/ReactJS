@@ -1,0 +1,2 @@
+The crossorigin attribute is used in a <script> tag to manage cross-origin requests for scripts, ensuring security and functionality when fetching resources from different domains. It helps control whether credentials like cookies are sent with requests, which is crucial for accessing resources securely. 
+Additionally, it works with CORS to allow browsers to perform necessary checks, ensuring that scripts from external sources are executed safely and in accordance with the server's policies.

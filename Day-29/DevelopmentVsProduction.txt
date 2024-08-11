@@ -1,0 +1,14 @@
+react.development.js
+===================
+This version is intended for development use. 
+It includes helpful warnings, error messages, and debugging tools that assist developers in identifying and fixing issues during the development process.
+
+react.production.js
+===================
+This version is intended for deployment use.
+In this version, all warnings, error messages, and debugging tools are stripped of.
+The size of file is small and executes faster.
+
+
+react.development.js is used during the development phase to provide a rich debugging experience, 
+while react.production.js is used in production to ensure the application runs efficiently and quickly for end users.

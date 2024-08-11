@@ -1,0 +1,15 @@
+CDN (Content Delivery Network):
+
+-> Amazon, flipkart, netflix delivers data quickly, it is because they are using
+CDNs.
+-> Instead of making the call to origin server, user call is directed to CDN server,
+internally CDN server calls the origin server. So the delivery of data is faster.
+
+-> CDN distributes the Network traffic evenly among multiple servers. This load balancing
+improves reliability and prevents the servers from becoming overwhelmed.
+
+-> If one or more servers got failure, then the calls are redirected to other servers
+to prevent uninteruption.
+
+-> CDNs uses the Anycast routing, so that it transfers the traffic to another available server.
+

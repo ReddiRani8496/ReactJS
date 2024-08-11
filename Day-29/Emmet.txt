@@ -1,0 +1,5 @@
+Emmet: Allows us to write code effeciently by expanding the abbreviations.
+
+Example: div>ul>li*3 
+The above example indicates that create div, inside that un ordered list, inside that
+3 list items.

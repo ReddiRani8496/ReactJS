@@ -1,0 +1,14 @@
+Why is React known as React?
+
+
+React is called "React" because it's like a smart helper that knows how to change what you see on a computer screen whenever something new happens. 
+
+Imagine you have a magic picture frame that can change the picture inside it whenever you get a new photo.
+
+You don't have to take the old picture out and put a new one in yourself; the frame does it for you automatically.
+
+In the same way, React helps computers show the right things on the screen by automatically updating the information when something changes. 
+
+This is especially useful for things like games or websites where things need to change quickly, like when you get a new message or when your score updates in a game.
+
+React is really good at "reacting" to these changes, which is why it's called React!

@@ -1,0 +1,38 @@
+Without using Async and Deffer:
+------------------------------
+HTML parsing is going on, once the script files encountered then script files are
+fetched, then executed those script file and at the end rest of the html parsing
+completed.
+
+
+The flow is: 
+
+
+parsing                   parsing again
+       fetching executing
+
+
+Async:
+-----
+HTML parsing is going on and the script files are fetched, once the html parsing before
+scripts completed, then execution of script files starts, at final rest of the
+html parsing is completed.
+
+The flow is: 
+
+
+parsing--          parsing again
+fetching  executing
+
+
+
+Deffer:
+-----
+HTML parsing is going on and the script files are fetched. Only after whole the
+html parsing is completed script files are executed.
+
+
+The flow is: 
+
+parsing---------------
+fetching              execution

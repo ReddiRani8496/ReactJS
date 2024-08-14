@@ -1,0 +1,14 @@
+HMR -> Hot Module Reload 
+it means parcle making track of all our changes, when we change something it will reflects on browser
+File Watcher Algorithm -> parcel uses it to reload the changes
+minifying
+bundling
+cleaning our code (removes console.logs in production file)
+super fast build algorithm
+image optimization
+caching while development(at start of building parcel it will take more time, same thing if we repeat it will take less time because it using caching)
+compressiong (renames variables during production)
+compatible with older version of browser
+port number
+consistent hashing algorithm
+zero config file

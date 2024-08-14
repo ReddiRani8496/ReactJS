@@ -1,0 +1,8 @@
+npm init
+parceljs.org
+npm install -D parcel -> Developer mode for that we mentioned -D
+
+npm install react
+npm install react-dom
+
+npx parcel index.html

@@ -1,0 +1,57 @@
+bundlers -> webpack, parcel, vite
+
+npm install -D parcel -> Developer mode for that we mentioned -D
+
+-> when we run parcel command, node modules and packagelock.json created, and in package.json the dependencies key pointing to parcel added
+
+
+Diff b.w ~ and caret(^) in package.json
+
+~ if new major version came, the project will automatically update
+^ if new minor version came, the project will automatically update
+if don't use any of these signs -> even new version comes, project won't update
+
+packagelock.json -> locks the version,
+never keep in gitignore (bcz some times it won't work in productions, it will work in our system)
+
+integrity:sha (to make sure the version in my system and server same or not)
+
+
+node modules -> we don't upload to git, becuase it is heavy
+we will send the packagelock.json, so that we can download node modules in server
+
+
+don't use cdn links, why? because whenever react version changes, we need to change the links
+and also to fetch the dependencies from our server faster than cdn links server
+
+
+npm install react -> to install react instead of cdn links
+npm install react-dom or npm i react-dom
+
+npx parcel index.html -> here index.html (start of our project) -> npx means execute using npm
+the above command will give server url where our project using
+
+in script.js
+import the react because now we don't have cdn links, now we have to use from node module so we need to import
+import reactDOM from "react-dom/client" also
+
+if we import react and react dom in js file, we will get error, because it will consider it has a normal js file,
+we have to mention it is a module
+so in index.html, in script tag write -> <script type="module" src="script.js">
+
+why dist folder created?
+To hold all the production files created by parcel
+npx parcel build index.html
+
+the code which we write in App.js will be seen in dist folder -> index.js file
+but it wil appear in the last, there are many lines of js code that is for imports of react and react-dom
+
+
+port number will be there is parcel-cache folder, even if we run two projects same time parcel will provide two different port numbers
+
+
+should we push parcel-cache in gitignore?
+we should put parcel-cache in gitignore
+
+why we should put?
+because which is auto generated will be put inside gitignore

@@ -1,0 +1,90 @@
+Is JSX mandatory for React?
+No
+
+Is ES6 mandatory for React?
+No
+
+{TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX
+{TitleComponent} -> represents react element
+{<TitleComponent/>} -> represents react component,where opening and closing placed in single tag
+{<TitleComponent></TitleComponent>} -> represents react componet, where opening and closing tags wrote differently
+
+
+How can I write comments in JSX?
+{/* */}
+
+What is <React.Fragment></React.Fragment> and <></> ?
+Both are same, in JSX there should be only one parent element, so child tags are enclosed within <React.Fragment></React.Fragment>  or <></> both represents the same.it is a component, exported by React.
+
+What is Virtual DOM?
+Virtual DOM is the representation of actual DOM. When anything new is added to the application, a virtual DOM is created and it is represented as a tree. Each element in the application is a node in this tree. So, whenever there is a change in the state of any element, a new Virtual DOM tree is created. This new Virtual DOM tree is then compared with the previous Virtual DOM tree and make a note of the changes. After this, it finds the best possible ways to make these changes to the real DOM. Now only the updated elements will get rendered on the page again.
+
+
+What is Reconciliation in React?
+The algorithm react uses to diff one tree with another to determine which parts need to be changed.
+
+Why we need keys in React? When do we need keys in React?
+Lets say there are 4 div tags, when new div tag is added, it takes time for diffing algorithm to figure out which is recently added, in order to avoid those confusion and make fast, we need to use keys, if we have keys it will compare keys. React uses virtual dom where keys play vital role and make react fast we need keys.
+
+
+Why React is fast?
+React uses virtual dom, it is representation of actual dom. it uses reconcilation, reconcilation is a process where we have a diffing algorithm. which finds out the difference b/w one tree AND another tree. Once it found the difference, it will re-render only the changes. 
+
+
+Can we use index as keys in React?
+We can use, but it is not a good practice, better to use unique key so that changes will become easy.
+
+
+What is props in React?
+Props are nothing but normal javascript arguments passing as parameters to function
+
+function Add(props) {
+  return props.a+props.b;
+}
+
+<Add a=10 b=20/>
+
+
+
+What is a Config Driven UI ?
+Config driven UI -> dynamic UI
+all this ui driven by config, which is configured backend
+Let's say on swiggy top we have carousel, these carousel data is comming from backend, based on area they can keep track of data and offers.
+
+
+
+
+What is React Fiber?
+The React Fiber architecture is a way that React, a popular library for building user interfaces, manages and updates what you see on the screen. Let's break it down with a simple analogy and examples to make it easy to understand.
+
+Imagine a Library
+Think of React as a librarian who is responsible for organizing books (your app's UI elements) on shelves (the screen). The librarian needs to make sure that the shelves are always neat and up-to-date with the latest books.
+
+Before Fiber: The Old Librarian
+
+Single Task at a Time: Imagine the librarian could only organize one entire shelf at a time. If a new book needed to be added, the librarian would have to take everything off the shelf and start over, which could take a long time.
+
+Blocking: While the librarian was reorganizing a shelf, no one else could use the library. Everything had to wait until the librarian was finished.
+
+With Fiber: The New Librarian
+
+Multitasking: Now, imagine the librarian can work on multiple shelves at once, but in small chunks. This means the librarian can start organizing one shelf, then move to another, and come back later to finish the first one. This is what Fiber allows React to do.
+
+Prioritization: The librarian can decide which shelves are more important and work on those first. For example, if a popular book needs to be added quickly, the librarian can prioritize that shelf over others.
+
+Non-Blocking: While the librarian is working, people can still use the library. The librarian can pause work and let people in, then continue organizing when there's time.
+
+How Fiber Works
+
+Breaking Tasks into Chunks: Fiber breaks down the work of updating the UI into smaller pieces. This way, React can pause and resume work, making the app more responsive.
+
+Prioritizing Tasks: React can decide which updates are more important and focus on those first. For example, if a button click needs an immediate response, React will prioritize updating that part of the UI.
+
+Smooth User Experience: By working in chunks and prioritizing, React ensures that your app remains fast and smooth, even when there are lots of updates to process.
+
+Example
+Imagine you're playing a video game. The game needs to update the screen constantly to show movements and actions. With Fiber, React can update the most important parts of the game first (like the character you're controlling) while less important parts (like the background) can be updated later. This keeps the game running smoothly without pauses.
+
+
+
+

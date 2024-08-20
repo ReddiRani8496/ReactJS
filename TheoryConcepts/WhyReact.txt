@@ -1,0 +1,12 @@
+Plain js / vennala js
+---------------------
+source code is visible to end user in developer tools.
+to render the page it will download and shows everytime which is time consuming.
+
+React:
+------
+-> Virtual DOM will be there, so that performance is high
+-> clean and less code
+-> reusable components
+-> flexible
+-> rich user interface using material ui and other libraries

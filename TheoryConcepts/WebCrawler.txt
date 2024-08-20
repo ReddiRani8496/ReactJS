@@ -1,0 +1,12 @@
+What is webcrawler?
+
+While making search engine , webcrawler is used.
+It will search the links in the home page and holds all the links and searches recursively,
+it avoids repetation of searching the results in same link, so it uses recursively search.
+
+Example:
+index.html is out home page 
+  inside this we have a,b,c,d files links
+  inside a -> e, f files are there
+
+  so first it searches in a, then inside a, e and f files will be searched.

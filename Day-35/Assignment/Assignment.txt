@@ -1,0 +1,78 @@
+1. What is a Microservice?
+Microservices are an architectural style for developing applications as a collection of small, loosely coupled, and independently deployable services, each focusing on a specific business function. 
+These services communicate with each other through lightweight APIs, allowing for greater flexibility, scalability, and ease of maintenance compared to traditional monolithic architectures.
+
+
+2. What is Monolith architecture?
+Monolithic architecture is a traditional software design model where all components of an application, such as the user interface, business logic, and data access, are tightly integrated into a single, unified codebase. 
+This approach simplifies initial development and deployment but can lead to challenges in scalability, flexibility, and maintenance as the application grows.
+
+3. What is the difference between Monolithc and Microservice?
+Monolithic architecture involves building an application as a single, unified codebase, offering simplicity and ease of development but limited scalability and flexibility. 
+In contrast, microservices architecture divides the application into smaller, independently deployable services, 
+providing better scalability and flexibility but often introducing complexity and coordination challenges.
+
+4.Why do we need a useEffect Hook?
+The useEffect Hook in React is used to perform side effects in functional components, such as data fetching, subscriptions, or manually changing the DOM, after rendering. 
+It helps manage lifecycle events, replacing class component lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount.
+
+5. What is Optional Chaining?
+Optional chaining is a feature introduced in ECMAScript 2020 that allows developers to
+safely access deeply nested properties in objects without having to explicitly check for
+null or undefined at each level. By using the ?. operator, if any part of the chain is
+null or undefined, the expression short-circuits and returns undefined instead of
+throwing an error, simplifying code and improving readability.
+
+Example:
+-------
+const users = [
+  { name: 'Aruna', address: { city: 'Tirupati' } },
+  { name: 'Rupa' }, // Rupa does not have an address
+];
+
+const arunaCity = users[0]?.address?.city; // 'Tirupati'
+
+
+const rupaCity = users[1]?.address?.city; // undefined
+
+console.log(arunaCity); // Output: 'Tirupati'
+console.log(rupaCity);   // Output: undefined
+
+
+6. What is Shimmer UI?
+Shimmer UI is a design pattern used to display a placeholder animation that mimics the layout of content while it is being loaded. 
+This effect, often seen as a gradient animation, helps improve user experience by indicating 
+that data is being fetched and keeping users engaged during potentially long loading times.
+
+7. What is the difference between JS expression and JS statement?
+In JavaScript, the key difference between expressions and statements lies in their purpose and behavior:
+Expressions are pieces of code that evaluate to a value. They can be used wherever a value is expected, such as in assignments or function arguments. Examples include arithmetic operations like 5 + 3, function calls like myFunction(), and variable assignments like x = 100.
+Statements are units of code that perform actions or control the flow of a program. They are executed for their side effects rather than for producing a value. Examples include variable declarations like let x = 0, control structures like if and for, and function declarations.
+
+
+8. What is Conditional Rendering, explain with a code example?
+Conditional rendering in React allows you to render different components or elements based on certain conditions or application states,
+making your UI dynamic and responsive to user interactions or data changes.
+
+Example:
+ <div>
+      {isLoggedIn ? (
+        <h1>Welcome back!</h1>
+      ) : (
+        <h1>Please sign up.</h1>
+      )}
+</div>
+
+9. What is CORS?
+Cross-Origin Resource Sharing (CORS) is a security feature implemented by web browsers that allows a web application hosted on one domain to request resources from a different domain, 
+overcoming the restrictions imposed by the same-origin policy. 
+CORS uses HTTP headers to specify which origins are permitted to access resources on the server, 
+enabling secure cross-origin requests and data transfers between browsers and servers.
+
+10. What is async and await?
+Async and await are JavaScript keywords used to work with asynchronous operations in a more readable and manageable way. 
+The async keyword is used to declare an asynchronous function, which automatically returns a promise, 
+while the await keyword pauses the execution of the function until a given promise is resolved or rejected, allowing asynchronous code to be written in a synchronous style.
+
+11. What is the use of `const json = await data.json();` in getRestaurants()
+Here it will wait until the fetched data is converted to a JSON representation.

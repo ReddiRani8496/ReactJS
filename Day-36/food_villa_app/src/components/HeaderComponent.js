@@ -1,5 +1,7 @@
 import logo from "./logo.jpg";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 const Title = () => (
   <a href="/">
     <img className="logo" src={logo} alt="logo" />
@@ -10,9 +12,15 @@ const NavItems = () => {
   return (
     <div className="nav-items">
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        <Link to="/">
+          <li>Home</li>
+        </Link>
+        <Link to="/about">
+          <li>About</li>
+        </Link>
+        <Link to="/contact">
+          <li>Contact</li>
+        </Link>
         <li>Cart</li>
       </ul>
     </div>

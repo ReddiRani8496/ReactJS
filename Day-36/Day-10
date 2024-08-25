@@ -1,0 +1,64 @@
+we do not mutate state directly
+
+class based component lifecycle:
+==============================
+constructor
+component render
+component didmount (same like useeffect in functional component)
+
+
+Q) parent-constructor
+   parent-didmount
+   parent-render
+   
+   child-constructor
+   child-didmount
+   child-render
+
+what is the order of execution
+
+Ans: parent-constructor
+   parent-render
+   child-constructor
+   child-render
+   child-didmount
+   parent-didmount
+   
+   
+React life cycle
+
+1. Render phase
+2. commit phase
+
+if we have two children
+ parent-constructor
+ parent-render
+   first child-constructor
+   first child-render
+   second child-constructor
+   second child-render
+   
+   // commit phase -> DOM updated for children
+   
+   first child - didmount
+   second child - didmount
+   
+ parent-didmount
+ 
+ 
+ 
+ 
+ most important interview question:
+ we can't make useeffect async
+ we can make component did mount async while making api call
+ 
+ 
+ 
+Component Did mount: after the first render
+component update: after every re-render
+
+The same thing in functional component is
+useEffect -> after first render
+dependency array -> to re-render
+ 
+

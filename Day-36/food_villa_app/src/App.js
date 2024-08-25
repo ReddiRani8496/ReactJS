@@ -7,6 +7,7 @@ import AboutUs from "./components/AboutUs";
 import Error from "./components/Error";
 import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
+import Profile from "./components/ProfileComponent";
 
 function App() {
   return (
@@ -26,7 +27,11 @@ const AppRouter = createBrowserRouter([
     errorElement: <Error />,
     children: [
       { path: "/", element: <Body /> },
-      { path: "/about", element: <AboutUs /> },
+      {
+        path: "/about",
+        element: <AboutUs />,
+        children: [{ path: "profile", element: <Profile name="Reddirani" /> }],
+      },
       { path: "/contact", element: <Contact /> },
       { path: "/restaurant/:id", element: <RestaurantMenu /> },
     ],

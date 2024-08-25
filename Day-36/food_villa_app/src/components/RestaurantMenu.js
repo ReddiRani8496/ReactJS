@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { IMG_CDN_URL } from "../Constant";
 import { useParams } from "react-router-dom";
+import Shimmer from "./Shimmer";
 
 function RestaurantMenu() {
   const [restaurant, setRestaurant] = useState("");
@@ -39,7 +40,9 @@ function RestaurantMenu() {
     const obj = response?.data;
     console.log(obj);
   }
-  return (
+  return restaurant == "" ? (
+    <Shimmer />
+  ) : (
     <div className="restaurantMenu">
       <div style={{ marginRight: "50px", marginLeft: "30px" }}>
         <h1>Restaurant Id: {id}</h1>

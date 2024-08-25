@@ -1,0 +1,82 @@
+1. How do you create Nested Routes react-router-dom cofiguration?
+Ans. const AppRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      { path: "/", element: <Body /> },
+      {
+        path: "/about",
+        element: <AboutUs />,
+        children: [{ path: "profile", element: <Profile name="Reddirani" /> }],
+      },
+      { path: "/contact", element: <Contact /> },
+      { path: "/restaurant/:id", element: <RestaurantMenu /> },
+    ],
+  },
+  // {
+  //   path: "/about",
+  //   element: <AboutUs />,
+  // },
+]);
+
+
+Using children we can declare the child components.
+in path if we mention "/" before the url name, it means it will start from the root.
+If we want nested route, then don't mention "/" before the url name.
+Here profile component is nested route, https://localhost:1274/about/profile
+
+
+2. What is the order of life cycle method calls in Class Based Components?
+
+There are two phases : Render and commit phase
+There are 3 levels of life cycle:
+1. ComponentDidMount
+2. ComponentDidUpdate
+3. ComponentWillUnmount
+
+First component did mount:
+After the first render of the component, ComponentDidMount will execute. Most of the API calls are made here.
+In component did mount, first component is rendered, then commit phase will start, where the dom structure will be build, then it will end.
+
+ComponentDidUpdate:
+If there is any change in state variables, then the component will re-render, after every re-render componentdidupdate will be executed.
+
+ComponentWillUnmount:
+If we want to clear the dom structure, like intervals, settimeout which will lead to performance issues those code will be placed here.
+This will execute when we move out from the component.
+
+
+
+3. Why do we use super(props) in constructor?
+Inheritance and Initialization: When we create a class component in React, we typically extend the React.Component class. The super(props) call in the constructor allows the child component to inherit properties from its parent class. Specifically, super() calls the constructor of the parent class, which is necessary to properly set up the component's instance.
+
+Accessing this.props: By passing props to super(), it enable us to  use of this.props within the constructor. This is important because JavaScript requires that the parent class's constructor is called before you can use this in a subclass. Without calling super(props), attempting to access this.props in the constructor will result in an error. 
+
+super(props) is used in React class components to ensure that the component is correctly initialized with the properties passed from its parent, enabling the use of this.props within the constructor and supporting the component's lifecycle and rendering logic.
+
+
+4. Why can't we have the callback function of useEffect async?
+we cannot directly make the callback function supplied to the useEffect hook async because:
+
+async functions implicitly return a promise, and;
+useEffect expects its callback to either return nothing or a clean-up function.
+
+How to use async in useEffect:
+
+useEffect(() => {
+  const fetchData = async () => {
+    try {
+      const response = await fetch('https://api.example.com/data');
+      const data = await response.json();
+      // Handle the data
+    } catch (error) {
+      // Handle the error
+    }
+  };
+
+  fetchData();
+}, []); // Dependency array
+
+

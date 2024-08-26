@@ -1,0 +1,138 @@
+babel:
+
+if our browser doesn't support ES6, then babel converts the code to browser understandable version
+
+
+add 
+"scripts":{
+"start":"parcel index.html",
+"build":"parcel build index.html"
+}
+
+then for running
+npm start
+npm run build (delete if already dist folder is there, if run again new file won't be updated)
+
+
+babel plugin transform remove console -> to remove the console.log in production
+
+
+.babelrc -> it is configuration for babel
+
+
+give key in js file, for tags in {id:'title',key:'h1'}
+
+
+
+Read diffing algorithm (react reconcilation key)
+
+
+how does react.createElement works?
+react.createElement gives us object.
+object is converted into HTML(DOM)
+react.createElement => object => HTML(DOM)
+It is converted by Babel
+
+
+what is JSX?
+JSX is html like syntax
+
+Diff b/w JSX and html?
+
+Advantages of JSX?
+Readability
+maintainibility
+developer friendly
+
+
+where is babel?
+babel comes along with parcle, when we download parcel
+inside node modules folder -> package-lock.json
+
+
+Components
+==========
+Functional Component
+Class based components -> important for older projects and interviews
+
+what is a functional component?
+
+const HeaderComponent = () => {
+  return (
+   <div>
+    <h1>Hello</h1>
+   </div>
+  );
+}
+
+or
+
+(if we don't use return keyword)
+const HeaderComponent = () => (
+   <div>
+    <h1>Hello</h1>
+   </div>
+  
+)
+
+root.render(<HeaderComponent />);
+
+How to use react element in react component?
+
+const heading = (
+<h1>Namaste</h1>
+)
+ 
+const HeaderComponent = () => (
+   <div>
+   {heading}
+    <h1>Hello</h1>
+   </div>
+  
+)
+
+How to use one react component inside another react component?
+
+const Heading =()=> (
+<h1>Namaste</h1>
+)
+ 
+const HeaderComponent = () => (
+   <div>
+   <Heading/>
+    <h1>Hello</h1>
+   </div>
+  
+)
+
+or the above heading also looks like normal js function
+
+const Heading =()=> (
+<h1>Namaste</h1>
+)
+ 
+const HeaderComponent = () => (
+   <div>
+   <{Heading()}>
+    <h1>Hello</h1>
+   </div>
+  
+)
+
+
+
+writing normal js in jsx
+
+const Header = () => (
+  <div>
+    {4+5}
+  </div>
+);
+
+
+santization in jsx
+Component composition in react
+
+
+
+

@@ -1,0 +1,59 @@
+Is JSX mandatory?
+Ans: No
+
+Is ES6 mandatory?
+Ans: No
+
+
+
+App layout
+
+Header:
+  logo
+  nav items
+  cart
+
+Body
+  Search bar
+  Restaurant list
+  Restaurant card
+    - Image
+    - Name
+    - Rating
+    - Cusines
+
+
+Footer
+   links
+   copyright
+
+
+
+React.Fragment: it is a component, exported by React. It is like an empty tag. <> </> instead of this <React.Fragment> </React.Fragment>
+jsx has only one parent
+
+Config driven UI -> dynamic UI
+all this ui driven by config, which is configured backend
+Let's say on swiggy top we have carousel, these carousel data is comming from backend, based on area they can keep track of data and offers.
+
+
+
+What is optional chaining?
+React fiber architecture?
+
+
+
+Why React is fast?
+
+React uses virtual dom, it is representation of actual dom. it uses reconcilation, reconcilation is a process where we have a diffing algorithm. which finds out the difference b/w one tree AND another tree. Once it found the difference, it will re-render only the changes. 
+
+What is reconcilation?
+The algorithm react uses to diff one tree with another to determine which parts need to be changed.
+
+
+
+
+
+
+
+-> Never use index as key

@@ -1,0 +1,54 @@
+why to use default in export?
+to export only one component
+while importing don't use curly braces, we can directly import
+when we use default no need to have same name, it can be anything
+
+export default function mainFunction() {
+  console.log('This is the default export');
+}
+
+import mainFunc from './module.js';
+
+named export?
+while importing use curly braces
+
+export const name = 'John';
+export function greet() {
+  console.log('Hello');
+}
+
+import { name, greet } from './module.js';
+
+
+* as Export
+===========
+Purpose: Re-exports all exports from another module under a single namespace.
+Syntax: Use the export * as syntax.
+
+export * as utils from './utils.js';
+
+import * as myUtils from './utils.js';
+
+
+What is the importance of config.js file?
+all the harcoded things are placed in config.js, so that if we want to make change we can easily make.
+
+
+diff b/w .js and .jsx?
+both are same, we can use anything, both works fine
+
+
+ 
+
+
+why state?
+==========
+state is an object that holds information about a component that may change over time. It allows components to be dynamic and interactive by updating the component's rendered output in response to user actions or system events
+
+why useState?
+to create variables, it comes from react library.
+The useState hook in React is a function that allows you to add state management to functional components. It takes an initial state value as an argument and returns an array containing the current state and a function to update that state. This hook simplifies state management by enabling functional components to maintain and update local state without needing class components
+
+what is hook?
+Hook is nothing but a normal function, but it has specific function for it.
+React Hooks have transformed the way developers write React applications by allowing functional components to be more powerful and easier to manage, leading to cleaner and more maintainable codebases

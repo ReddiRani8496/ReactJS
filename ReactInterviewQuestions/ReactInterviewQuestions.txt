@@ -64,3 +64,41 @@ Without keys, React does not understand the order or uniqueness of each element.
 With keys, React has an idea of which particular element was deleted, edited, and added.
 Keys are generally used for displaying a list of data coming from an API.
 ***Note- Keys used within arrays should be unique among siblings. They need not be globally unique.
+
+
+
+6. What is JSX?
+JSX stands for JavaScript XML. It allows us to write HTML inside JavaScript and place them in the DOM without using functions like appendChild( ) or createElement( ).
+
+As stated in the official docs of React, JSX provides syntactic sugar for React.createElement( ) function.
+
+Note- We can create react applications without using JSX as well.
+
+Let’s understand how JSX works:
+
+Without using JSX, we would have to create an element by the following process:
+
+const text = React.createElement('p', {}, 'This is a text');
+const container = React.createElement('div','{}',text );
+ReactDOM.render(container,rootElement);
+Using JSX, the above code can be simplified:
+
+const container = (
+<div>
+  <p>This is a text</p>
+</div>
+);
+ReactDOM.render(container,rootElement);
+
+
+7. What are props in React?
+The props in React are the inputs to a component of React. They can be single-valued or objects having a set of values that will be passed to components of React during creation by using a naming convention that almost looks similar to HTML-tag attributes. We can say that props are the data passed from a parent component into a child component.
+
+The main purpose of props is to provide different component functionalities such as:
+
+Passing custom data to the React component.
+Using through this.props.reactProp inside render() method of the component.
+Triggering state changes.
+For example, consider we are creating an element with reactProp property as given below: <Element reactProp = "1" />
+This reactProp name will be considered as a property attached to the native props object of React which already exists on each component created with the help of React library: props.reactProp;.
+

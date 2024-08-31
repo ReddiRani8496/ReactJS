@@ -102,3 +102,31 @@ Triggering state changes.
 For example, consider we are creating an element with reactProp property as given below: <Element reactProp = "1" />
 This reactProp name will be considered as a property attached to the native props object of React which already exists on each component created with the help of React library: props.reactProp;.
 
+
+8. Explain React Hooks.
+What are Hooks? Hooks are functions that let us “hook into” React state and lifecycle features from a functional component.
+
+React Hooks cannot be used in class components. They let us write components without class.
+
+Why were Hooks introduced in React?
+
+React hooks were introduced in the 16.8 version of React. Previously, functional components were called stateless components. Only class components were used for state management and lifecycle methods. The need to change a functional component to a class component, whenever state management or lifecycle methods were to be used, led to the development of Hooks.
+
+Example of a hook: useState hook:
+
+In functional components, the useState hook lets us define a state for a component:
+
+function Person(props) {
+// We are declaring a state variable called name.
+// setName is a function to update/change the value of name
+let [name, setName] = useState('');
+}
+The state variable “name” can be directly used inside the HTML. 
+
+
+
+9. What are the rules that must be followed while using React Hooks?
+There are 2 rules which must be followed while you code with Hooks:
+
+React Hooks must be called only at the top level. It is not allowed to call them inside the nested functions, loops, or conditions.
+It is allowed to call the Hooks only from the React Function Components.

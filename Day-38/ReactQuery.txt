@@ -23,3 +23,27 @@ Pagination and Infinite Scrolling:
 Integration with DevTools:
 -------------------------
          React Query Devtools provide a visual interface to inspect and debug queries, making it easier to understand the data-fetching process and optimize performance.
+
+
+
+Why React Query:
+----------------
+-> Since React is UI library, there is no specific pattern for the data-fetching process.
+-> Use state hook is used for data-fetching and useState hook is used to maintain component state like loading, error or resulting data.
+-> If data is needed throught the app, we tend to use state management libraries.
+-> Most of the state management libraries are good for working with the client state.
+-> State management libraries are not good for working with asynchronous data or server state.
+
+
+What is Client State?
+=====================
+Persisted in our app and accessing or updating it is synchronous.
+
+What is Server State?
+---------------------
+-> Persisted remotely and requires asynchronous APIs for fetching or updating.
+-> Has shared ownership
+-> Data can be updated someone else without your knowledge
+-> UI data may not be sync with remote data
+-> Challenging when we need to deal with caching, deduping multiple requests for the same data,
+performance optimization etc.

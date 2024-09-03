@@ -47,3 +47,23 @@ What is Server State?
 -> UI data may not be sync with remote data
 -> Challenging when we need to deal with caching, deduping multiple requests for the same data,
 performance optimization etc.
+
+
+Client State
+1. Client owned: It's always up-to-date.
+2. Our state: Only we can change it
+3. Usually ephemeral: It goes away when the browser is closed.
+4. Synchronous: It's instantly available.
+All these traits make client state easy to work with since it's predictable. There isn't much that can go wrong if we're the only ones who can make updates to it.
+
+Asynchronous state, on the other hand, is state that is not ours. We have to get it from somewhere else, usually a server, which is why it's often called server state.
+
+It persists, usually in a database, which means it's not 
+instantly available
+. This makes managing it, particularly over time, tricky.
+
+Server State
+1. Server owned: What we see is only a snapshot (which can be outdated).
+2. Owned by many users: Multiple users could change the data.
+3. Persisted remotely: It exists across browsing sessions.
+4. Asynchronous: It takes a bit of time for the data to go from the server to the client.

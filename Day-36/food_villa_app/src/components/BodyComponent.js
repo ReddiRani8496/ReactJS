@@ -3,45 +3,38 @@ import { IMG_CDN_URL, restaurantList } from "../Constant";
 import { RestaurantCard } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import { filterData } from "../utils/Helper";
+import useAllRestaurants from "../utils/useAllRestaurants";
+import useOnline from "../utils/useOnline";
 
 const Body = () => {
-  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [allRestaurants, setAllRestaurants] = useState([]);
+  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchInput, setSearchInput] = useState("");
 
-  function filterData(searchInput, restaurants) {
-    console.log("called");
-    return restaurants.filter((restaurant) => {
-      return restaurant?.info?.name
-        .toLowerCase()
-        .includes(searchInput.toLowerCase());
-    });
-  }
+  const {
+    allRestaurants: initialRestaurants,
+    filteredRestaurants: initialFilteredRestaurants,
+  } = useAllRestaurants();
 
+  // Use effect to set filtered restaurants once data is fetched
   useEffect(() => {
-    //Api call
-    getRestaurants();
-  }, []);
+    if (initialFilteredRestaurants) {
+      setFilteredRestaurants(initialFilteredRestaurants);
+    }
+    if (initialRestaurants) {
+      setAllRestaurants(initialRestaurants);
+    }
+  }, [initialFilteredRestaurants]);
 
-  async function getRestaurants() {
-    const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.96340&lng=77.58550&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
-    const response = await data.json();
-    setAllRestaurants(
-      response?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants
-    );
-    setFilteredRestaurants(
-      response?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants
+  const isOnline = useOnline();
+  if (!isOnline) {
+    return (
+      <h1>You are currently offline. Please check your internet connection</h1>
     );
   }
 
   // conditional rendering
-  // if restaurant is empty => render shimmer UI
-  // if restaurant has data => render actual data
-
   return allRestaurants.length === 0 ? (
     <Shimmer />
   ) : (
@@ -66,16 +59,19 @@ const Body = () => {
         </button>
       </div>
       <div className="restaurant-list">
-        {filteredRestaurants.length === 0 ? (
+        {filteredRestaurants?.length === 0 ? (
           <h1>No restaurant Available</h1>
         ) : (
-          filteredRestaurants.map((restaurant) => (
+          filteredRestaurants?.map((restaurant) => (
             <Link
-              to={`/restaurant/${restaurant.info.id}`}
+              to={`/restaurant/${restaurant?.info?.id}`}
               className="link"
-              key={restaurant.info.id}
+              key={restaurant?.info?.id}
             >
-              <RestaurantCard {...restaurant.info} key={restaurant.info.id} />
+              <RestaurantCard
+                {...restaurant?.info}
+                key={restaurant?.info?.id}
+              />
             </Link>
           ))
         )}
@@ -83,4 +79,5 @@ const Body = () => {
     </>
   );
 };
+
 export default Body;

@@ -21,9 +21,9 @@ class Profile extends React.Component {
     console.log("child-componentDidMount");
 
     // if we don't clear the setinterval it will lead to performance issues, so we will clear in componentwillunmount
-    this.timer = setInterval(() => {
-      console.log("timer");
-    }, 1000);
+    // this.timer = setInterval(() => {
+    //   console.log("timer");
+    // }, 1000);
   }
 
   // it is called after every re-render
@@ -32,12 +32,12 @@ class Profile extends React.Component {
   }
 
   // it is called to update the dom
-  componentWillUnmount() {
-    clearInterval(this.timer);
-    // clear the interval in componentWillUnmount to avoid memory leakage, otherwise it will continue to run indefinitely until the component is unmounted.
+  // componentWillUnmount() {
+  //   clearInterval(this.timer);
+  //   // clear the interval in componentWillUnmount to avoid memory leakage, otherwise it will continue to run indefinitely until the component is unmounted.
 
-    console.log("child-componentWillUnmount");
-  }
+  //   console.log("child-componentWillUnmount");
+  // }
 
   render() {
     console.log("child-render");

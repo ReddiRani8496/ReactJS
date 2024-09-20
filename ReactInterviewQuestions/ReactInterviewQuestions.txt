@@ -131,7 +131,7 @@ There are 2 rules which must be followed while you code with Hooks:
 React Hooks must be called only at the top level. It is not allowed to call them inside the nested functions, loops, or conditions.
 It is allowed to call the Hooks only from the React Function Components.
 
-10. 16. Explain React Hooks.
+10.  Explain React Hooks.
 What are Hooks? Hooks are functions that let us “hook into” React state and lifecycle features from a functional component.
 
 React Hooks cannot be used in class components. They let us write components without class.
@@ -143,7 +143,7 @@ Previously, functional components were called stateless components.
 Only class components were used for state management and lifecycle methods. 
 The need to change a functional component to a class component, whenever state management or lifecycle methods were to be used, led to the development of Hooks.
 
-10. What is the use of useEffect React Hooks?
+11. What is the use of useEffect React Hooks?
 The useEffect React Hook is used for performing the side effects in functional components. 
 With the help of useEffect, you will inform React that your component requires something to be done after rendering the component or after a state change. 
 The function you have passed(can be referred to as “effect”) will be remembered by React and call afterwards the performance of DOM updates is over. 

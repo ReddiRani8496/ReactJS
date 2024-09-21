@@ -156,3 +156,10 @@ The useEffect React Hook will accept 2 arguments: useEffect(callback,[dependenci
 Where the first argument callback represents the function having the logic of side-effect and it will be immediately executed after changes were being pushed to DOM. 
 The second argument dependencies represent an optional array of dependencies. 
 The useEffect() will execute the callback only if there is a change in dependencies in between renderings.
+
+
+12. What are controlled and uncontrolled components?
+Controlled components have their form data handled by the state within React, while uncontrolled components store their data within the DOM itself.
+
+13. What is the Context API?
+The Context API is a way to pass data through the component tree without having to pass props down manually at every level. It is used when some data needs to be accessible by many components at different nesting levels.

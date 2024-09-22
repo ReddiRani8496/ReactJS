@@ -163,3 +163,6 @@ Controlled components have their form data handled by the state within React, wh
 
 13. What is the Context API?
 The Context API is a way to pass data through the component tree without having to pass props down manually at every level. It is used when some data needs to be accessible by many components at different nesting levels.
+
+14. What is eventemitter?
+To eliminate the props drilling, we can use the eventemitter to pass the data through different components.

@@ -30,7 +30,9 @@ const Body = () => {
   const isOnline = useOnline();
   if (!isOnline) {
     return (
-      <h1>You are currently offline. Please check your internet connection</h1>
+      <h1>
+        🔴 You are currently offline. Please check your internet connection
+      </h1>
     );
   }
 

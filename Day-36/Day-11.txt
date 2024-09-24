@@ -1,0 +1,33 @@
+Chunking
+--------
+Chunking refers to the process of breaking down a large bundle of code into smaller, manageable pieces called "chunks."
+ In the context of Webpack, a popular module bundler, chunks are distinct components that form a bundle.
+ Each chunk is loaded independently, which can improve load times by only loading necessary code when needed.
+
+
+Code Splitting
+--------------
+Code splitting is a technique used to split code into separate bundles that can be loaded on demand. 
+This helps in reducing the initial load time of an application by loading only the required code for the current view or route. 
+In React, this can be achieved using React.lazy and React.Suspense:
+
+Dynamic Bundling
+-----------------
+Dynamic bundling involves creating bundles that can be changed or updated without requiring a full app update. 
+This is particularly useful in mobile apps using React Native, 
+where libraries like react-native-dynamic-bundle allow for dynamic updates and A/B testing without going through app store updates.
+
+Lazy Loading
+-------------
+Lazy loading is a design pattern that delays the loading of non-essential resources until they are needed. 
+In React, lazy loading is implemented using React.lazy to load components asynchronously
+
+On-Demand Loading
+------------------
+On-demand loading is similar to lazy loading but emphasizes loading resources exactly when they are needed based on user interaction or specific conditions. 
+This ensures that only the necessary code is executed at any given time.
+
+Dynamic Import
+--------------
+Dynamic import allows importing modules dynamically at runtime rather than at compile time. 
+This enables asynchronous loading of modules, which can be beneficial for performance optimization

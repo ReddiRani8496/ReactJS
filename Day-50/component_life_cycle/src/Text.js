@@ -17,3 +17,5 @@ function Text() {
 }
 
 export default Text;
+
+// when child component updates, parent componet does not update

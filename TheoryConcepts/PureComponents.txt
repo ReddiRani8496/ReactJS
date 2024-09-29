@@ -1,0 +1,6 @@
+What are Pure Components in React
+ReactJS has provided us with a Pure Component. If we extend a class with Pure Component, there is no need for the shouldComponentUpdate() lifecycle method. 
+ReactJS Pure Component Class compares the current state and props with new props and states to decide whether the React component should re-render itself or not.
+
+In simple words, If the previous value of the state or props and the new value of the state or props are the same, the component will not re-render itself. 
+Pure Components restricts the re-rendering when there is no use for re-rendering of the component. Pure Components are Class Components that extend React.PureComponent. 

@@ -23,6 +23,9 @@ const NavItems = () => {
           <li>Contact</li>
         </Link>
         <li key="cart">Cart</li>
+        <Link to="/instamart" key="instamart">
+          <li>Instamart</li>
+        </Link>
       </ul>
     </div>
   );

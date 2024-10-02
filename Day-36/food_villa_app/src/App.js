@@ -8,7 +8,8 @@ import Error from "./components/Error";
 import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Profile from "./components/ProfileComponent";
-import { lazy } from "react";
+import { lazy, Suspense } from "react";
+import Shimmer from "./components/Shimmer";
 
 //import Instamart from "./components/Instamart";
 
@@ -40,7 +41,14 @@ const AppRouter = createBrowserRouter([
       },
       { path: "/contact", element: <Contact /> },
       { path: "/restaurant/:id", element: <RestaurantMenu /> },
-      { path: "/instamart", element: <Instamart /> },
+      {
+        path: "/instamart",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Instamart />
+          </Suspense>
+        ),
+      },
     ],
   },
   // {

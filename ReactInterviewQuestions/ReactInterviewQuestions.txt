@@ -166,3 +166,7 @@ The Context API is a way to pass data through the component tree without having 
 
 14. What is eventemitter?
 To eliminate the props drilling, we can use the eventemitter to pass the data through different components.
+
+15. Difference between local and session storage?
+Ans. local -> forever
+    session -> only for the current tab

@@ -170,3 +170,12 @@ To eliminate the props drilling, we can use the eventemitter to pass the data th
 15. Difference between local and session storage?
 Ans. local -> forever
     session -> only for the current tab
+
+16. What are Custom Hooks?
+A Custom Hook is a function in Javascript whose name begins with ‘use’ and which calls other hooks. 
+It is a part of React v16.8 hook update and permits you for reusing the stateful logic without any need for component hierarchy restructuring.
+
+In almost all of the cases, custom hooks are considered to be sufficient for replacing render props and HoCs (Higher-Order components) and reducing the amount of nesting required. 
+Custom Hooks will allow you for avoiding multiple layers of abstraction or wrapper hell that might come along with Render Props and HoCs.
+
+The disadvantage of Custom Hooks is it cannot be used inside of the classes

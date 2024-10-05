@@ -5,14 +5,14 @@ import useOnline from "../utils/useOnline";
 
 const Title = () => (
   <a href="/">
-    <img className="logo" src={logo} alt="logo" />
+    <img className="h-16" src={logo} alt="logo" />
   </a>
 );
 
 const NavItems = () => {
   return (
-    <div className="nav-items">
-      <ul>
+    <div>
+      <ul className="flex space-x-4">
         <Link to="/" key="home">
           <li>Home</li>
         </Link>
@@ -22,7 +22,9 @@ const NavItems = () => {
         <Link to="/contact" key="contact">
           <li>Contact</li>
         </Link>
-        <li key="cart">Cart</li>
+        <Link to="/cart" key="cart">
+          <li key="cart">Cart</li>
+        </Link>
         <Link to="/instamart" key="instamart">
           <li>Instamart</li>
         </Link>
@@ -36,7 +38,7 @@ const Header = () => {
   const isOnline = useOnline();
 
   return (
-    <div className="header">
+    <div className="flex justify-between items-center p-2 m-2 bg-pink-100">
       <Title />
       <NavItems />
       {isOnline ? "🟢" : "🔴"}
@@ -50,3 +52,8 @@ const Header = () => {
 };
 
 export default Header;
+
+/**
+ * tailwind css intellisense
+ * ctrl + space
+ */

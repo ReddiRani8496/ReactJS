@@ -16,14 +16,17 @@ code {
   padding: 0;
   box-sizing: border-box;
 }
-.header {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   /* background-color: #f8f9fa; */
-  border-bottom: 2px solid #e9ecef;
+/*  border-bottom: 2px solid #e9ecef;
 }
 
 .nav-items > ul {
@@ -59,8 +62,8 @@ button {
   padding: 8px 15px;
   margin-left: 20px;
   /* background-color: #007bff; */
-  /* color: white; */
-  border: none;
+/* color: white; */
+/*border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -68,7 +71,7 @@ button {
 
 button:hover {
   /* background-color: #0056b3; */
-}
+/*}
 
 .restaurant-list {
   display: flex;
@@ -90,7 +93,7 @@ button:hover {
   background-color: #fff;
   border-radius: 8px;
   text-decoration: none; /* Ensure no underlines */
-}
+/*}
 
 .card > img {
   width: 100%;
@@ -126,10 +129,10 @@ button:hover {
 .link {
   display: block;
   text-decoration: none; /* Remove default link styling */
-}
+/*}
 
 .restaurantMenu {
   margin-top: 20px;
   margin-bottom: 50px;
   display: flex;
-}
+} */

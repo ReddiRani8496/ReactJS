@@ -59,7 +59,7 @@ const Body = () => {
           Search
         </button>
       </div>
-      <div className="restaurant-list">
+      <div className="flex flex-wrap">
         {filteredRestaurants?.length === 0 ? (
           <h1>No restaurant Available</h1>
         ) : (

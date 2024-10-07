@@ -179,3 +179,12 @@ In almost all of the cases, custom hooks are considered to be sufficient for rep
 Custom Hooks will allow you for avoiding multiple layers of abstraction or wrapper hell that might come along with Render Props and HoCs.
 
 The disadvantage of Custom Hooks is it cannot be used inside of the classes
+
+17. Why do React Hooks make use of refs?
+Earlier, refs were only limited to class components but now it can also be accessible in function components through the useRef Hook in React.
+
+The refs are used for:
+
+Managing focus, media playback, or text selection.
+Integrating with DOM libraries by third-party.
+Triggering the imperative animations.

@@ -188,3 +188,8 @@ The refs are used for:
 Managing focus, media playback, or text selection.
 Integrating with DOM libraries by third-party.
 Triggering the imperative animations.
+
+
+18. useOnClickOutside custom hook?
+The useOnClickOutside hook is a common topic in React interviews, especially for frontend or full-stack development roles. This custom hook is used to detect clicks outside a specified element and execute a callback function when such an event occurs. 
+Understanding how to implement and use this hook can demonstrate your proficiency with React hooks and handling DOM events.

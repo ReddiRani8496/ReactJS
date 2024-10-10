@@ -193,3 +193,14 @@ Triggering the imperative animations.
 18. useOnClickOutside custom hook?
 The useOnClickOutside hook is a common topic in React interviews, especially for frontend or full-stack development roles. This custom hook is used to detect clicks outside a specified element and execute a callback function when such an event occurs. 
 Understanding how to implement and use this hook can demonstrate your proficiency with React hooks and handling DOM events.
+
+19. What are error boundaries?
+Introduced in version 16 of React, Error boundaries provide a way for us to catch errors that occur in the render phase.
+
+What is an error boundary?
+Any component which uses one of the following lifecycle methods is considered an error boundary.
+In what places can an error boundary detect an error?
+
+Render phase
+Inside a lifecycle method
+Inside the constructor

@@ -1,0 +1,14 @@
+1. What is React?
+Ans. React is an open source javascript library for building user interfaces developed by Facebook.
+
+2. Explain JSX?
+Ans. JSX(JavaScript XML) is a syntax extension for javascript recommended by React for describing
+what the UI should look like.
+
+3. What is the virtual DOM?
+Virtual DOM is the light weight copy of actual DOM in memory. React uses it to improve performance by
+updating only the changed parts of actual DOM in memory.
+
+4. What is significance of keys in React?
+Keys are used to uniquely identify and differentiate between the components.
+They help React to know which components are modified, added or removed.

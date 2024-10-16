@@ -12,3 +12,10 @@ updating only the changed parts of actual DOM in memory.
 4. What is significance of keys in React?
 Keys are used to uniquely identify and differentiate between the components.
 They help React to know which components are modified, added or removed.
+
+5. What are state and props in React?
+State is an internal datastore that belongs to a specific component, and it can be changed over
+time. Props are properties passed to a component from its parent, and they are immutable.
+
+6. What is the difference between the state and the props?
+State is internal to a component and can be changed over time, while props are external and passed to a component.

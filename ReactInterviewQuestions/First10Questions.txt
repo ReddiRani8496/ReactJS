@@ -19,3 +19,19 @@ time. Props are properties passed to a component from its parent, and they are i
 
 6. What is the difference between the state and the props?
 State is internal to a component and can be changed over time, while props are external and passed to a component.
+
+7. Explain the concept of lifting state up?
+Lifting state up is a pattern where the state of child component is moved to its parent component,
+allowing multiple child components to share the same state.
+
+8. What is the purpose of setstate in react?
+Setstate is used to update the state of a component and trigger the re-rendering of the component.
+
+9. What is react router?
+React router is a library that enables navigation among views in react application, allowing for the
+development of single page applications.
+
+10. Explain the useEffect hook in react?
+The useEffect hook in react is used for side-effects in functional components. Such as data fetching,
+subscriptions or manually changing the DOM.
+

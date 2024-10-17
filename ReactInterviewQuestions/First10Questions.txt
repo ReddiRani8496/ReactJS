@@ -35,3 +35,5 @@ development of single page applications.
 The useEffect hook in react is used for side-effects in functional components. Such as data fetching,
 subscriptions or manually changing the DOM.
 
+11. What are controlled components in React?
+Controlled components are components where the form data is controlled by React state. The input elements receive their current value from the state and have their value updated through a callback function.

@@ -37,3 +37,6 @@ subscriptions or manually changing the DOM.
 
 11. What are controlled components in React?
 Controlled components are components where the form data is controlled by React state. The input elements receive their current value from the state and have their value updated through a callback function.
+
+12. What is Redux, and why is it used?
+Ans: Redux is a state management library for JavaScript applications, commonly used with React. It helps manage the state of an application in a predictable way.

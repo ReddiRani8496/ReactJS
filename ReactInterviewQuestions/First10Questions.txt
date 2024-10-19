@@ -40,3 +40,6 @@ Controlled components are components where the form data is controlled by React 
 
 12. What is Redux, and why is it used?
 Ans: Redux is a state management library for JavaScript applications, commonly used with React. It helps manage the state of an application in a predictable way.
+
+13. Explain the concept of higher-order components (HOC).
+Ans: Higher-order components are functions that take a component and return a new component with additional features or props.

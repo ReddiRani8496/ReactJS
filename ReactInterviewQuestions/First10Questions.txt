@@ -46,3 +46,33 @@ Ans: Higher-order components are functions that take a component and return a ne
 
 14. What is the purpose of the useReducer hook?
 Ans: The useReducer hook is used for managing complex state logic in React applications. It is an alternative to useState when state transitions are more complex.
+
+15. What is the significance of the key attribute in React lists?
+Ans: The key attribute is used to uniquely identify the elements in a list. It helps React effeciently update the DOM when the list changes.
+
+16. What is the difference between the class components and functional components?
+Ans: Class components use ES6 classes and have additional features like state and lifecycle methods,
+     while functional components are simpler and are often used with hooks.
+
+17. What are React hooks?
+Ans: React hooks are functions that allow functional components to use state, lifecycle methods and other react feactures.
+
+18. Explain the purpose of useContext hook?
+Ans: The useContext hook is used to access the value of a React context within a functional component.
+     It is used to overcome the problem of props drilling.
+
+19. What is the purpose of the componentDidMount lifecycle method?
+Ans: ComponentDidMount is invoked immediately after a component is mounted, making it suitable for initial AJAX requests or setting up subscriptions.
+
+20. What is the React developer tool?
+Ans: The React Developer tool is a browser extension that allows developers to inspect and debug React component hierarchies in the Chrome and firefox browsers.
+
+21. Explain the concept of context in React.
+Ans: Context provides a way to pass data through the component tree without having to pass props manually at every level. It is often used to share
+     values like themes or authentication status.
+
+22. What are the advantages of using React?
+Ans: React offers a virtual DOM for improved performance, a component-based architecture for modular development, and a strong community support, among other advantages.
+
+23. How does React handle prop drilling, and how can it be avoided?
+Ans: Prop drilling occurs when props are passed down through multiple levels of components. It can be avoided by using context or state management libraries like Redux.

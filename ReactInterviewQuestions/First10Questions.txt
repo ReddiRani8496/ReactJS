@@ -76,3 +76,7 @@ Ans: React offers a virtual DOM for improved performance, a component-based arch
 
 23. How does React handle prop drilling, and how can it be avoided?
 Ans: Prop drilling occurs when props are passed down through multiple levels of components. It can be avoided by using context or state management libraries like Redux.
+
+24. Explain the significance of React Fragments?
+Ans: React Fragments allows developers to group multiple elements without adding an extra node to the DOM,
+helping to keep the structure clean.

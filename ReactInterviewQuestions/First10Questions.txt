@@ -80,3 +80,7 @@ Ans: Prop drilling occurs when props are passed down through multiple levels of 
 24. Explain the significance of React Fragments?
 Ans: React Fragments allows developers to group multiple elements without adding an extra node to the DOM,
 helping to keep the structure clean.
+
+25. What is the significance of the key prop in React Router?
+Ans: The key prop is used to force the remounting of a component when the key changes,
+ensuring that the component is fully reinitialized.

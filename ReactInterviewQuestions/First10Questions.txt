@@ -95,3 +95,7 @@ preventing unncessary re-renders if the props have not changed.
 
 28. What is the significance of the useCallback hook in React?
 Ans: useCallback hook is used to memoize the call back functions, preventing them from recreating every render.
+
+29. Explain the concept of Suspense in React?
+Ans: Suspense is a feature in react that allows component to wait for something before rendering,
+such as data fetching or code splitting.

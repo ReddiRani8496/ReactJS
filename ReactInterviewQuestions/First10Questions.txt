@@ -107,3 +107,6 @@ from subscriptions or clearing intervals when component unmounted.
 31. Explain the concept of lazy loading in React?
 Ans: Lazy loading is a technique where modules or components loaded only when they are actually needed,
 improving initial load times.
+
+32. Explain the concept of useDebugValue hook?
+Ans: useDebugValue is used to display a label for custom hooks in React dev tools.

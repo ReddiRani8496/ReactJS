@@ -114,3 +114,6 @@ Ans: useDebugValue is used to display a label for custom hooks in React dev tool
 33. What is the purpose of the useReducer hook?
 Ans: useReducer is a hook in React used for state management in functional components. It is particularly
 useful when the state logic is complex and involves multiple sub values or when the next state depends on the previous state.
+
+34. What are react portals?
+Ans: React portals provides a way to render children into a DOM node that exits outside the parent components hierarchy.

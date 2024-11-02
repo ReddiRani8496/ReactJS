@@ -117,3 +117,7 @@ useful when the state logic is complex and involves multiple sub values or when 
 
 34. What are react portals?
 Ans: React portals provides a way to render children into a DOM node that exits outside the parent components hierarchy.
+
+35. What is the purpose of forwardRef function in React?
+Ans: forwardRef is used to forward references through components, allowing parent components to interact with
+the Child's DOM node.

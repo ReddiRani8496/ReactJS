@@ -121,3 +121,9 @@ Ans: React portals provides a way to render children into a DOM node that exits 
 35. What is the purpose of forwardRef function in React?
 Ans: forwardRef is used to forward references through components, allowing parent components to interact with
 the Child's DOM node.
+
+36. Explain the component lifecycle methods in class components.
+Ans: componentDidMount(): Called after a component is mounted.
+shouldComponentUpdate(): Determines if a component should re-render.
+componentDidUpdate(): Called after a component updates.
+componentWillUnmount(): Called before a component is removed from the DOM.

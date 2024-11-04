@@ -127,3 +127,9 @@ Ans: componentDidMount(): Called after a component is mounted.
 shouldComponentUpdate(): Determines if a component should re-render.
 componentDidUpdate(): Called after a component updates.
 componentWillUnmount(): Called before a component is removed from the DOM.
+
+37. What is strict mode in React?
+React.StrictMode is a useful component for highlighting potential problems in an application. 
+Just like <Fragment>, <StrictMode> does not render any extra DOM elements.
+It activates additional checks and warnings for its descendants. 
+These checks apply for development mode only.

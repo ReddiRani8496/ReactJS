@@ -10,6 +10,8 @@ import RestaurantMenu from "./components/RestaurantMenu";
 import Profile from "./components/ProfileComponent";
 import { lazy, Suspense } from "react";
 import Shimmer from "./components/Shimmer";
+import Store from "./utils/Store";
+import { Provider } from "react-redux";
 
 //import Instamart from "./components/Instamart";
 
@@ -18,12 +20,12 @@ const Instamart = lazy(() => import("./components/Instamart"));
 
 function App() {
   return (
-    <div>
+    <Provider store={Store}>
       <Header />
       {/* <Body /> */}
       <Outlet />
       <Footer />
-    </div>
+    </Provider>
   );
 }
 

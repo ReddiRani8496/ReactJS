@@ -3,6 +3,7 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Title = () => (
   <a href="/">
@@ -11,6 +12,7 @@ const Title = () => (
 );
 
 const NavItems = () => {
+  const cartItems = useSelector((store) => cart.store.items);
   return (
     <div>
       <ul className="flex space-x-4">
@@ -37,7 +39,7 @@ const NavItems = () => {
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   const isOnline = useOnline();
-  const {user} = useContext(UserContext);
+  const { user } = useContext(UserContext);
 
   return (
     <div className="flex justify-between items-center p-2 m-2 bg-pink-100">

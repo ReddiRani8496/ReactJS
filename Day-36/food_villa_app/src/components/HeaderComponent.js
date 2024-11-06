@@ -12,7 +12,8 @@ const Title = () => (
 );
 
 const NavItems = () => {
-  const cartItems = useSelector((store) => cart.store.items);
+  const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems);
   return (
     <div>
       <ul className="flex space-x-4">
@@ -26,7 +27,7 @@ const NavItems = () => {
           <li>Contact</li>
         </Link>
         <Link to="/cart" key="cart">
-          <li key="cart">Cart</li>
+          <li key="cart">Cart {cartItems.length} items</li>
         </Link>
         <Link to="/instamart" key="instamart">
           <li>Instamart</li>

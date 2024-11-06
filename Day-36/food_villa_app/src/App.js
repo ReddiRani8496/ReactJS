@@ -12,6 +12,7 @@ import { lazy, Suspense } from "react";
 import Shimmer from "./components/Shimmer";
 import Store from "./utils/Store";
 import { Provider } from "react-redux";
+import Cart from "./components/Cart";
 
 //import Instamart from "./components/Instamart";
 
@@ -50,6 +51,10 @@ const AppRouter = createBrowserRouter([
             <Instamart />
           </Suspense>
         ),
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
   },

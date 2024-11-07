@@ -7,6 +7,7 @@ export const RestaurantCard = ({
   sla,
   location,
 }) => {
+  console.log("Image id: " + cloudinaryImageId);
   return (
     <div className="w-[200px] m-2 p-2 shadow-md h-96 hover:bg-red-100">
       <img src={IMG_CDN_URL + cloudinaryImageId} alt="burger"></img>

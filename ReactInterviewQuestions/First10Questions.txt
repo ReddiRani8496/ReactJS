@@ -129,7 +129,11 @@ componentDidUpdate(): Called after a component updates.
 componentWillUnmount(): Called before a component is removed from the DOM.
 
 37. What is strict mode in React?
-React.StrictMode is a useful component for highlighting potential problems in an application. 
+Ans: React.StrictMode is a useful component for highlighting potential problems in an application. 
 Just like <Fragment>, <StrictMode> does not render any extra DOM elements.
 It activates additional checks and warnings for its descendants. 
 These checks apply for development mode only.
+
+38. What are synthetic events in React?
+Ans: Synthetic events combine the response of different browsers' native events into one API, ensuring consistency across browsers.
+The application is consistent regardless of the browser in which it is running.

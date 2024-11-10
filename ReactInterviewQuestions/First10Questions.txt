@@ -137,3 +137,7 @@ These checks apply for development mode only.
 38. What are synthetic events in React?
 Ans: Synthetic events combine the response of different browsers' native events into one API, ensuring consistency across browsers.
 The application is consistent regardless of the browser in which it is running.
+
+39. What are the components of Redux?
+Ans: Redux has three main components: the store (which holds the application state), actions (which describe what to do), 
+and reducers (which define how the state changes in response to actions)

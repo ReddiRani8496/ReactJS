@@ -141,3 +141,7 @@ The application is consistent regardless of the browser in which it is running.
 39. What are the components of Redux?
 Ans: Redux has three main components: the store (which holds the application state), actions (which describe what to do), 
 and reducers (which define how the state changes in response to actions)
+
+40. What is the difference between Context API and Redux?
+Ans: Context API is a simpler way to share state across components without prop drilling and is suitable for less complex applications. 
+On the other hand, Redux is more robust, with middleware and a global store, making it better for complex, scalable state management.

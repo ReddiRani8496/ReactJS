@@ -149,3 +149,18 @@ On the other hand, Redux is more robust, with middleware and a global store, mak
 41. Explain the use of CSS modules in React.
 Ans: CSS modules are scoped CSS files that apply styles locally to components, preventing naming conflicts. 
 In React, you can import CSS modules and use them as objects, allowing you to create modular, maintainable styles.
+
+42. How do you handle events in React components?
+In React, handling events is a fundamental way to make your application interactive. 
+React uses a synthetic event system, which is a wrapper around the native browser events, providing a consistent and cross-browser interface for handling events efficiently.
+Example:
+-------
+function MyButton() {
+  const handleClick = () => {
+    alert('Button clicked!');
+  };
+
+  return (
+    <button onClick={handleClick}>Click me</button>
+  );
+}

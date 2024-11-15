@@ -164,3 +164,8 @@ function MyButton() {
     <button onClick={handleClick}>Click me</button>
   );
 }
+
+43. What is the difference between addEventListener and onChange in React?
+Ans: In React, onChange is a prop used to handle changes in form elements like inputs, and it fires on every keystroke for real-time updates. 
+In contrast, addEventListener is a native JavaScript method used to attach event listeners to DOM elements. 
+React's onChange is preferred because it integrates with React's synthetic event system, automatically handles cleanup, and ensures cross-browser compatibility.

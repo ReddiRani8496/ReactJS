@@ -169,3 +169,13 @@ function MyButton() {
 Ans: In React, onChange is a prop used to handle changes in form elements like inputs, and it fires on every keystroke for real-time updates. 
 In contrast, addEventListener is a native JavaScript method used to attach event listeners to DOM elements. 
 React's onChange is preferred because it integrates with React's synthetic event system, automatically handles cleanup, and ensures cross-browser compatibility.
+
+44. What is the difference between a controlled and uncontrolled component?
+Ans: 
+Controlled Components: These components rely on React's state to manage their values. 
+The input field's value is explicitly set by the component's state, and any changes to the input are handled by updating the state through event handlers like onChange.
+This makes React the "single source of truth" for the form data, providing more control and predictability over user inputs12.
+
+Uncontrolled Components: These components manage their own internal state using the DOM. 
+Instead of relying on React state, you access the current value of an input field using a ref after a form submission or when needed. 
+This approach is simpler but offers less control over the form data23.

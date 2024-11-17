@@ -179,3 +179,28 @@ This makes React the "single source of truth" for the form data, providing more 
 Uncontrolled Components: These components manage their own internal state using the DOM. 
 Instead of relying on React state, you access the current value of an input field using a ref after a form submission or when needed. 
 This approach is simpler but offers less control over the form data23.
+
+45. How do you handle route changes and updates in React Router?
+In React Router, route changes and updates are handled using several key tools:
+
+Detecting Route Changes:
+------------------------
+Use the useLocation hook to listen for route changes in functional components.
+In older versions, history.listen() can track route changes globally.
+
+Programmatic Navigation:
+------------------------
+In React Router v6, use the useNavigate hook to navigate programmatically.
+In v5, use history.push() for navigation.
+
+Dynamic Routes:
+--------------
+Access route parameters using the useParams hook in functional components.
+
+Handling 404 Pages:
+------------------
+Use a wildcard route (*) to catch undefined routes and display a "Not Found" page.
+
+Lazy Loading:
+------------
+Optimize performance by lazy loading components with React.lazy() and Suspense.

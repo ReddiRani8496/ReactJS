@@ -204,3 +204,6 @@ Use a wildcard route (*) to catch undefined routes and display a "Not Found" pag
 Lazy Loading:
 ------------
 Optimize performance by lazy loading components with React.lazy() and Suspense.
+
+46. How do you optimize React component performance?
+Use memoization, shouldComponentUpdate, and React.PureComponent to reduce unnecessary re-renders.

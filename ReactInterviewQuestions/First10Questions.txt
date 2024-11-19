@@ -207,3 +207,8 @@ Optimize performance by lazy loading components with React.lazy() and Suspense.
 
 46. How do you optimize React component performance?
 Use memoization, shouldComponentUpdate, and React.PureComponent to reduce unnecessary re-renders.
+
+47. How does React handle server-side rendering?
+React handles server-side rendering (SSR) by rendering components on the server and sending the fully rendered HTML to the client. 
+This improves initial load times and enhances SEO, as search engines can easily index the pre-rendered content. 
+React uses ReactDOMServer.renderToString() to convert components into HTML strings on the server, which are then sent to the client for hydration, allowing client-side interactivity to take over once the JavaScript is loaded

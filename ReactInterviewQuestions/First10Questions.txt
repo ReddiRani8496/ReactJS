@@ -212,3 +212,7 @@ Use memoization, shouldComponentUpdate, and React.PureComponent to reduce unnece
 React handles server-side rendering (SSR) by rendering components on the server and sending the fully rendered HTML to the client. 
 This improves initial load times and enhances SEO, as search engines can easily index the pre-rendered content. 
 React uses ReactDOMServer.renderToString() to convert components into HTML strings on the server, which are then sent to the client for hydration, allowing client-side interactivity to take over once the JavaScript is loaded
+
+48. What is the purpose of the Link component in React Router?
+Ans: The Link component in React Router is used for client-side navigation in a Single Page Application (SPA) without reloading the entire page.
+It functions similarly to an HTML <a> tag but prevents full page reloads, enabling faster transitions between routes by updating the URL and rendering the corresponding components dynamically.

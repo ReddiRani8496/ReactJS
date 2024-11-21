@@ -1,0 +1,14 @@
+h1 {
+  height: 500px;
+  text-align: center;
+  align-items: center;
+  background-color: steelblue;
+}
+
+span {
+  display: block;
+  height: 300px;
+  text-align: center;
+  align-items: center;
+  background-color: teal;
+}

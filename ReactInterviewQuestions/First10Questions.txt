@@ -216,3 +216,8 @@ React uses ReactDOMServer.renderToString() to convert components into HTML strin
 48. What is the purpose of the Link component in React Router?
 Ans: The Link component in React Router is used for client-side navigation in a Single Page Application (SPA) without reloading the entire page.
 It functions similarly to an HTML <a> tag but prevents full page reloads, enabling faster transitions between routes by updating the URL and rendering the corresponding components dynamically.
+
+49. How do you update state in a React component?
+Ans: In React, we update state using setState in class components or the useState hook in functional components. 
+For example, in functional components, call setState(newState) or pass a function to update based on the previous state. 
+Always treat state as immutable to ensure proper re-renders.

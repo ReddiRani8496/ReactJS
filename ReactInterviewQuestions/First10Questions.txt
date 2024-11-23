@@ -221,3 +221,9 @@ It functions similarly to an HTML <a> tag but prevents full page reloads, enabli
 Ans: In React, we update state using setState in class components or the useState hook in functional components. 
 For example, in functional components, call setState(newState) or pass a function to update based on the previous state. 
 Always treat state as immutable to ensure proper re-renders.
+
+50. What is the difference between HTML and React event handling?
+Ans: Syntax: HTML uses lowercase event names (e.g., onclick), while React uses camelCase (e.g., onClick). In HTML, functions are invoked with (); in React, you pass the function reference without () unless arguments are needed 124.
+Preventing Default Behavior: HTML allows returning false to prevent default actions, whereas React requires explicitly calling event.preventDefault() on the synthetic event object 234.
+Event System: HTML interacts directly with the real DOM, while React uses a synthetic event system for cross-browser consistency and better performance via the virtual DOM 15.
+Event Binding: In HTML, events can be attached inline or via addEventListener. React binds events during component creation and does not use addEventListener in components 4.

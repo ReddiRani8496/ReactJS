@@ -223,7 +223,24 @@ For example, in functional components, call setState(newState) or pass a functio
 Always treat state as immutable to ensure proper re-renders.
 
 50. What is the difference between HTML and React event handling?
-Ans: Syntax: HTML uses lowercase event names (e.g., onclick), while React uses camelCase (e.g., onClick). In HTML, functions are invoked with (); in React, you pass the function reference without () unless arguments are needed 124.
-Preventing Default Behavior: HTML allows returning false to prevent default actions, whereas React requires explicitly calling event.preventDefault() on the synthetic event object 234.
-Event System: HTML interacts directly with the real DOM, while React uses a synthetic event system for cross-browser consistency and better performance via the virtual DOM 15.
-Event Binding: In HTML, events can be attached inline or via addEventListener. React binds events during component creation and does not use addEventListener in components 4.
+Ans: Syntax: HTML uses lowercase event names (e.g., onclick), while React uses camelCase (e.g., onClick). In HTML, functions are invoked with (); in React, you pass the function reference without () unless arguments are needed.
+Preventing Default Behavior: HTML allows returning false to prevent default actions, whereas React requires explicitly calling event.preventDefault() on the synthetic event object .
+Event System: HTML interacts directly with the real DOM, while React uses a synthetic event system for cross-browser consistency and better performance via the virtual DOM .
+Event Binding: In HTML, events can be attached inline or via addEventListener. React binds events during component creation and does not use addEventListener in components .
+
+51. What is the difference between a stateless and stateful component in React?
+Ans: Stateful Components
+    -------------------
+Definition: These components manage their own internal state. They keep track of data that can change over time, such as user inputs or dynamic content.
+Characteristics:
+Can hold and update state using this.state (class components) or useState (functional components with hooks).
+Have access to lifecycle methods (e.g., componentDidMount, componentDidUpdate) in class components.
+Typically used for handling complex logic or dynamic behavior.
+
+Stateless Components
+--------------------
+Definition: These components do not manage their own state. They rely entirely on props passed from parent components to render UI.
+Characteristics:
+Simpler and easier to test since they are essentially pure functions of their props.
+Do not have lifecycle methods or internal state (unless using hooks like useState, which makes them technically stateful).
+Primarily used for presentational purposes, focusing on how things look rather than how they work.

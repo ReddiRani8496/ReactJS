@@ -244,3 +244,11 @@ Characteristics:
 Simpler and easier to test since they are essentially pure functions of their props.
 Do not have lifecycle methods or internal state (unless using hooks like useState, which makes them technically stateful).
 Primarily used for presentational purposes, focusing on how things look rather than how they work.
+
+52. Redux toolkit?
+Ans: Redux Toolkit (RTK) is the official, recommended approach for writing Redux logic.
+It simplifies state management in React applications by addressing common challenges developers face with traditional Redux.
+"Redux Toolkit is a modern library built on top of Redux to simplify and streamline state management. 
+It reduces boilerplate code, simplifies store setup with configureStore, and makes reducers easier to write using createSlice, which supports mutable syntax via Immer. 
+RTK also includes powerful utilities like createAsyncThunk for handling async logic and RTK Query for data fetching and caching. 
+By automating common tasks like integrating Redux DevTools and middleware, it eliminates many pain points of traditional Redux while maintaining its core principles. Overall, it makes Redux more efficient, developer-friendly, and easier to maintain." 

@@ -252,3 +252,7 @@ It simplifies state management in React applications by addressing common challe
 It reduces boilerplate code, simplifies store setup with configureStore, and makes reducers easier to write using createSlice, which supports mutable syntax via Immer. 
 RTK also includes powerful utilities like createAsyncThunk for handling async logic and RTK Query for data fetching and caching. 
 By automating common tasks like integrating Redux DevTools and middleware, it eliminates many pain points of traditional Redux while maintaining its core principles. Overall, it makes Redux more efficient, developer-friendly, and easier to maintain." 
+
+53. Explain debouncing?
+Ans: Debouncing is a programming technique used to improve performance by limiting how often a function is executed, especially in scenarios where the function is triggered frequently, such as user input events, scrolling, or resizing. 
+In React development, debouncing is particularly useful for optimizing event handling and ensuring that heavy operations, like API calls or DOM updates, are not executed too often.

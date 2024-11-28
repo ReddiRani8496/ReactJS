@@ -1,0 +1,2 @@
+Jest is a popular JavaScript testing framework developed by Facebook, and React is a widely-used JavaScript library for building user interfaces. 
+Combining Jest with React enables you to write unit tests, integration tests, and end-to-end tests for your React applications. 

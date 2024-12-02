@@ -5,6 +5,7 @@ const UserList = () => {
     { id: 1, name: "Rahul" },
     { id: 2, name: "Leela" },
     { id: 3, name: "Rama" },
+    { id: 4, name: "Revanth" },
   ]);
 
   const [foundUser, setFoundUser] = useState(null);

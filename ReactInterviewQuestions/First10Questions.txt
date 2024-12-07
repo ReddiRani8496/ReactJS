@@ -256,3 +256,6 @@ By automating common tasks like integrating Redux DevTools and middleware, it el
 53. Explain debouncing?
 Ans: Debouncing is a programming technique used to improve performance by limiting how often a function is executed, especially in scenarios where the function is triggered frequently, such as user input events, scrolling, or resizing. 
 In React development, debouncing is particularly useful for optimizing event handling and ensuring that heavy operations, like API calls or DOM updates, are not executed too often.
+
+54. What is a synthetic event in React js?
+Ans: It is an object that serves as a cross browser wrapper of the browser's native event.

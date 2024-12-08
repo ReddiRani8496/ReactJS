@@ -1,0 +1,9 @@
+1. What problem does React solve in web development?
+Ans: React solves key web development challenges by:
+Efficient UI Updates: Uses a Virtual DOM to optimize rendering and improve performance.
+Component-Based Architecture: Enables reusable, modular, and maintainable code.
+State Management: Simplifies handling dynamic data and application state.
+Declarative Syntax: Makes UI development predictable and easier to debug.
+Scalability: Handles complex applications with a unidirectional data flow.
+Cross-Platform Development: Supports web and mobile via React Native.
+SEO Optimization: Enables server-side rendering for better search engine indexing.

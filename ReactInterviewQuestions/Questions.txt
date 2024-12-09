@@ -7,3 +7,7 @@ Declarative Syntax: Makes UI development predictable and easier to debug.
 Scalability: Handles complex applications with a unidirectional data flow.
 Cross-Platform Development: Supports web and mobile via React Native.
 SEO Optimization: Enables server-side rendering for better search engine indexing.
+
+2. Is react javasript library or framework?
+Ans: React is a JavaScript library for building user interfaces. It focuses on rendering UI components and managing state, making it lightweight and flexible. 
+Unlike frameworks, React doesn’t dictate the app’s structure or include features like routing or state management, which need to be added separately.

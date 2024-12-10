@@ -11,3 +11,9 @@ SEO Optimization: Enables server-side rendering for better search engine indexin
 2. Is react javasript library or framework?
 Ans: React is a JavaScript library for building user interfaces. It focuses on rendering UI components and managing state, making it lightweight and flexible. 
 Unlike frameworks, React doesn’t dictate the app’s structure or include features like routing or state management, which need to be added separately.
+
+3. How does react make it easier to build user interfaces?
+Ans: React makes building user interfaces easier through its component-based architecture, which promotes reusability and modularity. 
+It uses a Virtual DOM for efficient updates, ensuring high performance. 
+Its declarative syntax simplifies coding by focusing on what the UI should look like rather than how to implement it. 
+Additionally, React's rich ecosystem, cross-platform capabilities with React Native, and tools for debugging and state management enhance productivity and scalability.

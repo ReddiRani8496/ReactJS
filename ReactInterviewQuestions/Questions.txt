@@ -17,3 +17,24 @@ Ans: React makes building user interfaces easier through its component-based arc
 It uses a Virtual DOM for efficient updates, ensuring high performance. 
 Its declarative syntax simplifies coding by focusing on what the UI should look like rather than how to implement it. 
 Additionally, React's rich ecosystem, cross-platform capabilities with React Native, and tools for debugging and state management enhance productivity and scalability.
+
+4. What is babel and why it is used in react development?
+Ans: Babel is a widely-used JavaScript compiler that plays a crucial role in React development. 
+Its primary purpose is to transform modern JavaScript (ES6+ and beyond) and JSX (JavaScript XML) into a version of JavaScript that is compatible with older browsers, ensuring cross-browser functionality.
+
+Why Babel is Used in React Development
+--------------------------------------
+React relies heavily on modern JavaScript features and JSX, which are not natively supported by all browsers. Babel addresses these challenges by:
+Transpiling Modern JavaScript Syntax:
+Converts ES6+ features like arrow functions, classes, and destructuring into ES5 syntax, which is supported by older browsers.
+
+For example:
+------------
+javascript
+// Input: ES6 Arrow Function
+const add = (a, b) => a + b;
+
+// Output after Babel transpilation
+var add = function(a, b) {
+  return a + b;
+};

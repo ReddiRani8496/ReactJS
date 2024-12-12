@@ -38,3 +38,16 @@ const add = (a, b) => a + b;
 var add = function(a, b) {
   return a + b;
 };
+
+5. What is the key difference between JSX and HTML when it comes to element attributes?
+CamelCase for Attributes: In JSX, all HTML attributes and event handlers must be written in camelCase. 
+For example, onclick in HTML becomes onClick in JSX, and onmouseover becomes onMouseOver126. 
+This is because JSX is a syntax extension for JavaScript, and JavaScript uses camelCase conventions.
+
+Reserved Keywords: Some attributes in HTML conflict with JavaScript reserved keywords. 
+For instance, the class attribute in HTML is written as className in JSX because class is a reserved keyword in JavaScript. 
+Similarly, the for attribute in HTML becomes htmlFor in JSX235.
+
+Style Attribute: In HTML, styles are defined as a single string with CSS properties separated by semicolons. 
+In JSX, the style attribute must be an object with camelCased property names, and values must be strings. 
+For example, <div style="color: blue;"> in HTML would be <div style={{color: 'blue'}}> in JSX

@@ -51,3 +51,18 @@ Similarly, the for attribute in HTML becomes htmlFor in JSX235.
 Style Attribute: In HTML, styles are defined as a single string with CSS properties separated by semicolons. 
 In JSX, the style attribute must be an object with camelCased property names, and values must be strings. 
 For example, <div style="color: blue;"> in HTML would be <div style={{color: 'blue'}}> in JSX
+
+6. Explain how you can apply CSS classes to JSX elements.
+Ans: In JSX, you can apply CSS classes to elements using the className attribute instead of the standard HTML class attribute. This is because class is a reserved keyword in JavaScript.
+import React from 'react';
+import './styles.css'; // Import your CSS file
+
+function App() {
+  return (
+    <div className="container">
+      <h1 className="title">Hello, World!</h1>
+    </div>
+  );
+}
+
+export default App;

@@ -66,3 +66,17 @@ function App() {
 }
 
 export default App;
+
+7. How do you add conditional rendering to a JSX component to display one message if a variable is true and another if it's false?
+Ans: import React from 'react';
+
+const ConditionalComponent = ({ isTrue }) => {
+  return (
+    <div>
+      {isTrue ? <p>The variable is true!</p> : <p>The variable is false!</p>}
+    </div>
+  );
+};
+
+export default ConditionalComponent;
+

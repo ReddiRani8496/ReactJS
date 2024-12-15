@@ -80,3 +80,14 @@ const ConditionalComponent = ({ isTrue }) => {
 
 export default ConditionalComponent;
 
+8.What is a React Component?
+A React component is a fundamental building block of React applications. It is essentially a self-contained piece of code that defines a specific part of the user interface (UI). Components in React allow developers to couple markup (HTML), logic (JavaScript), and styles (CSS) within them, making it easier to manage and maintain complex UIs15.
+React components can be categorized into two main types:
+--------------------------------------------------------
+Function Components: 
+  These are simple JavaScript functions that accept props (properties) as arguments and return React elements. 
+  They are often used for components that do not manage their own state39.
+
+Class Components: 
+  These components are more complex and can manage their own state. 
+  They require extending from React.Component and include a render method to return React elements39.

@@ -86,8 +86,15 @@ React components can be categorized into two main types:
 --------------------------------------------------------
 Function Components: 
   These are simple JavaScript functions that accept props (properties) as arguments and return React elements. 
-  They are often used for components that do not manage their own state39.
+  They are often used for components that do not manage their own state.
 
 Class Components: 
   These components are more complex and can manage their own state. 
-  They require extending from React.Component and include a render method to return React elements39.
+  They require extending from React.Component and include a render method to return React elements.
+
+9. Why react component important?
+Ans: React components are crucial for several reasons:
+Reusability: Components can be reused across different parts of an application or even in different projects. This reduces redundancy and makes code management more efficient.
+Modularity: By breaking down an application into smaller, manageable pieces, components promote modularity. This makes it easier to develop, test, and maintain large-scale applications.
+Improved Performance: React's component-based architecture, combined with the virtual DOM, optimizes rendering by updating only the parts of the UI that have changed. This results in faster and more efficient web applications.
+Scalability: The modular nature of components allows developers to build scalable applications that can grow and adapt to new requirements without significant restructuring.

@@ -98,3 +98,43 @@ Reusability: Components can be reused across different parts of an application o
 Modularity: By breaking down an application into smaller, manageable pieces, components promote modularity. This makes it easier to develop, test, and maintain large-scale applications.
 Improved Performance: React's component-based architecture, combined with the virtual DOM, optimizes rendering by updating only the parts of the UI that have changed. This results in faster and more efficient web applications.
 Scalability: The modular nature of components allows developers to build scalable applications that can grow and adapt to new requirements without significant restructuring.
+
+10. Differences between functional and class components in React.
+Ans: Definition:
+Functional Components: Simple JavaScript functions that take props as input and return JSX.
+Class Components: ES6 classes that extend React.Component and include a render() method to return JSX.
+State Management:
+Functional Components: Stateless by default but can manage state using React Hooks (e.g., useState).
+Class Components: Stateful by default, managing state through this.state and updating it with this.setState().
+Lifecycle Methods:
+Functional Components: Use the useEffect hook to handle lifecycle events like mounting, updating, and unmounting.
+Class Components: Provide built-in lifecycle methods such as componentDidMount, componentDidUpdate, and componentWillUnmount.
+Syntax Complexity:
+Functional Components: Simpler syntax with less boilerplate code.
+Class Components: More verbose due to constructors, the this keyword, and lifecycle methods.
+Performance:
+Functional Components: Slightly more efficient as they avoid the overhead of class instantiation.
+Class Components: Slightly less efficient due to the additional overhead of managing class objects.
+Use of this Keyword:
+Functional Components: Do not use the this keyword, making them easier to understand for new developers.
+Class Components: Require the use of this to access props, state, and methods.
+Hooks Support:
+Functional Components: Fully support React Hooks (introduced in React 16.8) for state and side-effect management.
+Class Components: Do not support hooks; rely on traditional lifecycle methods.
+Code Reusability:
+Functional Components: Promote composition through custom hooks, making logic reusable.
+Class Components: Reuse logic through inheritance patterns, which can be less modular.
+Error Boundaries:
+Functional Components: Cannot act as error boundaries directly.
+Class Components: Can define error boundaries using lifecycle methods like componentDidCatch.
+Lines of Code:
+Functional Components: Require fewer lines of code, leading to cleaner and more maintainable codebases.
+Class Components: Require more boilerplate code.
+Testing and Debugging:
+Functional Components: Easier to test due to their simpler structure and lack of internal state by default.
+Class Components: More challenging to test because of their complexity and reliance on internal state.
+Memory Usage:
+Functional Components: Use less memory as they do not create class instances.
+Class Components: Use more memory due to class instantiation.
+Modern React Recommendation:
+Functional components are preferred in modern React development due to their simplicity and hooks support. Class components are still supported but are less commonly used in new projects.

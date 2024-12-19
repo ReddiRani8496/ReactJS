@@ -127,14 +127,9 @@ Class Components: Reuse logic through inheritance patterns, which can be less mo
 Error Boundaries:
 Functional Components: Cannot act as error boundaries directly.
 Class Components: Can define error boundaries using lifecycle methods like componentDidCatch.
-Lines of Code:
-Functional Components: Require fewer lines of code, leading to cleaner and more maintainable codebases.
-Class Components: Require more boilerplate code.
+
 Testing and Debugging:
 Functional Components: Easier to test due to their simpler structure and lack of internal state by default.
 Class Components: More challenging to test because of their complexity and reliance on internal state.
 Memory Usage:
 Functional Components: Use less memory as they do not create class instances.
-Class Components: Use more memory due to class instantiation.
-Modern React Recommendation:
-Functional components are preferred in modern React development due to their simplicity and hooks support. Class components are still supported but are less commonly used in new projects.

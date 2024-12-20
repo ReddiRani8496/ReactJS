@@ -133,3 +133,12 @@ Functional Components: Easier to test due to their simpler structure and lack of
 Class Components: More challenging to test because of their complexity and reliance on internal state.
 Memory Usage:
 Functional Components: Use less memory as they do not create class instances.
+
+10. Create a functional React component called Greeting that renders an <h1> element with a greeting message of your choice.
+import React from 'react';
+
+const Greeting = () => {
+  return <h1>Hello, Welcome to React!</h1>;
+};
+
+export default Greeting;

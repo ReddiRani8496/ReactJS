@@ -142,3 +142,48 @@ const Greeting = () => {
 };
 
 export default Greeting;
+
+11. The difference between state and props in React can be summarized as follows:
+Props
+Definition: Props (short for properties) are used to pass data from a parent component to a child component.
+Ownership: Props are owned by the parent component and are passed down to child components.
+Mutability: Props are immutable, meaning they cannot be modified by the receiving component.
+Purpose: They are used to configure or customize child components, such as passing data or callback functions.
+Example:
+javascript
+function ChildComponent(props) {
+  return <p>{props.message}</p>;
+}
+
+function ParentComponent() {
+  return <ChildComponent message="Hello, World!" />;
+}
+Here, message is a prop passed from the parent to the child.
+State
+Definition: State is a local data storage mechanism that belongs to a specific component. It allows the component to manage and track changes over time.
+Ownership: State is managed within the component itself and is not accessible outside of it.
+Mutability: State is mutable, meaning it can be updated using methods like setState (in class components) or hooks like useState (in functional components).
+Purpose: It is used for dynamic data that changes due to user interactions or other events.
+Example:
+javascript
+import React, { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+Here, count is a state variable that updates when the button is clicked.
+Key Differences
+Feature	Props	State
+Data Flow	Passed from parent to child	Managed locally within a component
+Mutability	Immutable	Mutable
+Usage	Used for static or external data	Used for dynamic or internal data
+Access	Accessible via props object	Accessible via this.state (class) or hooks (functional)
+Trigger Re-render	Yes, if props change	Yes, if state changes
+

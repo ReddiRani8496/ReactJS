@@ -187,3 +187,15 @@ Usage	Used for static or external data	Used for dynamic or internal data
 Access	Accessible via props object	Accessible via this.state (class) or hooks (functional)
 Trigger Re-render	Yes, if props change	Yes, if state changes
 
+14. Explain the importance of keys when rendering lists in React
+
+Rendering lists in React is a fundamental concept, and using unique keys for each list item is crucial. Keys help React efficiently track and update individual elements in a list, improving the performance of your application.
+
+When rendering a list of elements, React needs a way to identify which items have changed, been added, or been removed. Keys provide this unique identifier, allowing React to efficiently re-render the list without having to re-render the entire list from scratch.
+
+Without unique keys, React would have no way to differentiate between list items, leading to sub-optimal performance and potentially incorrect updates. By using keys, React can efficiently update the list, only re-rendering the necessary elements and avoiding unnecessary re-renders.
+
+Unique keys also help React maintain the state of individual list items, ensuring that user interactions and component behavior are preserved even as the list is updated. This is particularly important in scenarios where list items have their own state or event handlers.
+
+In summary, using unique keys when rendering lists in React is a best practice that enhances the performance and reliability of your application, making it a crucial aspect of efficient React development.
+

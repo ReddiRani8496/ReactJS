@@ -199,3 +199,34 @@ Unique keys also help React maintain the state of individual list items, ensurin
 
 In summary, using unique keys when rendering lists in React is a best practice that enhances the performance and reliability of your application, making it a crucial aspect of efficient React development.
 
+15. Explain the concept of CSS Modules in React.
+How do they help prevent class name conflicts
+and improve encapsulation of styles?
+
+CSS Modules are a popular technique used in React applications to manage styles in a modular and scoped manner. They allow developers to write CSS that is scoped to a specific component, thus preventing class name conflicts and enhancing encapsulation.
+
+Key Features of CSS Modules
+Scoped Styles
+When using CSS Modules, each class name is transformed into a unique identifier. This transformation means that styles defined for one component cannot inadvertently affect styles in another component. For instance, a class named .button in one component will be renamed to something unique like .button__ComponentName__123ABC, ensuring that it does not clash with .button in another component.
+
+Importing Styles
+CSS Modules are imported directly into a React component. Instead of using a global stylesheet, you can import the CSS file as an object. Each class name can then be accessed as a property on that object, allowing for cleaner and more maintainable code.
+
+import styles from './Button.module.css';
+
+const Button = () => {
+    return <button className={styles.button}>Click Me</button>;
+};
+Improved Encapsulation
+By scoping styles to individual components, CSS Modules enhance encapsulation. This means that the styles are only applied to the component they belong to, reducing the risk of unintended side effects from global styles. It also allows developers to think of styles in the context of the component rather than the application as a whole.
+
+Benefits of Using CSS Modules
+Avoid Class Name Conflicts: Since class names are automatically generated, developers can avoid naming collisions, which is particularly useful in large codebases.
+
+Maintainability: Styles are kept close to the components they affect, making it easier to manage and understand the relationships between styles and components.
+
+Readability: The import syntax allows for clear and readable code, where the connection between the style and the component is explicit.
+
+Ease of Refactoring: As components evolve, renaming a class name does not require a search through a global stylesheet, minimizing the risk of breaking styles elsewhere.
+
+In summary, CSS Modules in React provide a robust mechanism for managing styles that promotes modularity, prevents conflicts, and improves the encapsulation of styles, ultimately leading to more maintainable and scalable codebases.

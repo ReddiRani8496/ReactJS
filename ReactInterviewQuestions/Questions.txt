@@ -230,3 +230,50 @@ Readability: The import syntax allows for clear and readable code, where the con
 Ease of Refactoring: As components evolve, renaming a class name does not require a search through a global stylesheet, minimizing the risk of breaking styles elsewhere.
 
 In summary, CSS Modules in React provide a robust mechanism for managing styles that promotes modularity, prevents conflicts, and improves the encapsulation of styles, ultimately leading to more maintainable and scalable codebases.
+
+16. How can you implement a "404 Not Found" page in a React Router application to handle routes that do not match any defined routes?
+
+To implement a "404 Not Found" page in a React Router application, you can use the following steps:
+Steps for React Router v6
+Create a 404 Component
+Create a new React component to display the 404 error message. For example:
+jsx
+// File: PageNotFound.js
+const PageNotFound = () => (
+  <div>
+    <h1>404 - Page Not Found</h1>
+    <p>Sorry, the page you are looking for does not exist.</p>
+  </div>
+);
+
+export default PageNotFound;
+Set Up Routes with a Catch-All Route
+Use the Routes component from react-router-dom and define a Route with the wildcard path (*) at the end to catch all unmatched routes.
+jsx
+// File: App.js
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
+import PageNotFound from './PageNotFound';
+
+const App = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      {/* Catch-all route for 404 */}
+      <Route path="*" element={<PageNotFound />} />
+    </Routes>
+  </BrowserRouter>
+);
+
+export default App;
+Start the Application
+Run your app using npm start or yarn start. When users navigate to an undefined route (e.g., /non-existent-page), the PageNotFound component will render.
+Key Notes:
+The wildcard route (path="*") should always be placed last to ensure it only matches when no other routes match.
+You can customize the 404 page design and include navigation links to guide users back to valid pages.
+This approach ensures that your application gracefully handles undefined routes, improving user experience
+
+

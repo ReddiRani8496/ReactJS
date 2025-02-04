@@ -259,3 +259,6 @@ In React development, debouncing is particularly useful for optimizing event han
 
 54. What is a synthetic event in React js?
 Ans: It is an object that serves as a cross browser wrapper of the browser's native event.
+
+55. Difference between props and state?
+Ans: Props are immutable, where as state is mutable.

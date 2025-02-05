@@ -262,3 +262,6 @@ Ans: It is an object that serves as a cross browser wrapper of the browser's nat
 
 55. Difference between props and state?
 Ans: Props are immutable, where as state is mutable.
+
+56. What is JSX?
+Ans: JSX is a javascript code which allows us to write html and javascript code.

@@ -265,3 +265,7 @@ Ans: Props are immutable, where as state is mutable.
 
 56. What is JSX?
 Ans: JSX is a javascript code which allows us to write html and javascript code.
+
+57. What is the virtual dom?
+Ans: Virtual dom is an in-memory representation of the real DOM.
+React updates only the changed parts of the real DOM by comparing it with the virtual DOM, improving performance.

@@ -269,3 +269,12 @@ Ans: JSX is a javascript code which allows us to write html and javascript code.
 57. What is the virtual dom?
 Ans: Virtual dom is an in-memory representation of the real DOM.
 React updates only the changed parts of the real DOM by comparing it with the virtual DOM, improving performance.
+
+58. How Does React Handle Component Re-Rendering?
+React follows a Virtual DOM (VDOM) reconciliation process to efficiently handle component re-rendering. Here's how it works:
+
+59. React's Re-Rendering Process
+When a component’s state or props change, React triggers a re-render for that component.
+The component’s function runs again, producing a new Virtual DOM tree.
+React compares the new Virtual DOM with the previous Virtual DOM using a process called reconciliation.
+Based on this comparison, React efficiently updates only the changed parts of the Real DOM, minimizing performance overhead.

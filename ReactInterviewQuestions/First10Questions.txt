@@ -278,3 +278,20 @@ When a component’s state or props change, React triggers a re-render for that 
 The component’s function runs again, producing a new Virtual DOM tree.
 React compares the new Virtual DOM with the previous Virtual DOM using a process called reconciliation.
 Based on this comparison, React efficiently updates only the changed parts of the Real DOM, minimizing performance overhead.
+
+60.  What is useState and how do you use it?
+useState is a React Hook that lets us add state to functional components.
+Example:
+--------
+import React, { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}

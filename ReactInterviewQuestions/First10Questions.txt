@@ -314,3 +314,19 @@ function Timer() {
 
   return <p>Seconds: {seconds}</p>;
 } 
+
+62. What are custom hooks?
+Ans: Custom hooks are reusable function that encapsulates the logic using built-in hooks like useState and useEffect.
+Example:
+
+import React, {useState, useEffect} from 'react';
+
+function fetchData() {
+  const [data,setData] = useState([]);
+  useEffect(()=> {
+    const response = fetch("http://localhost:8080/users");
+    const data = response.json();
+    setData(data);
+  })
+  return data;
+}

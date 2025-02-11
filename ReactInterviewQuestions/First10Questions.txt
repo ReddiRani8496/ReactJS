@@ -330,3 +330,10 @@ function fetchData() {
   })
   return data;
 }
+
+63. How do you manage state in React?
+
+State can be managed in several ways:
+Local State: Using useState or useReducer.
+Global State: Using Context API or libraries like Redux.
+Server State: Using tools like React Query.

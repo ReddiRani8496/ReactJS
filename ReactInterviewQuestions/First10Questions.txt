@@ -355,3 +355,13 @@ function ControlledInput() {
   const [value, setValue] = React.useState('');
   return <input value={value} onChange={(e) => setValue(e.target.value)} />;
 }
+
+66. What are React lifecycle methods?
+
+Lifecycle methods in class components include:
+
+componentDidMount: Executes after the component mounts.
+
+shouldComponentUpdate: Determines if a re-render is needed.
+
+componentWillUnmount: Executes before the component unmounts.

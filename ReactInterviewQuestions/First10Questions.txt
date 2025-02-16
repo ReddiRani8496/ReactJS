@@ -365,3 +365,14 @@ componentDidMount: Executes after the component mounts.
 shouldComponentUpdate: Determines if a re-render is needed.
 
 componentWillUnmount: Executes before the component unmounts.
+
+67. How do you optimize performance in a React application?
+Use React.memo to prevent unnecessary re-renders of functional components.
+
+Use useCallback and useMemo hooks to memoize functions and values.
+
+Lazy load components using React.lazy and Suspense.
+
+Split code using dynamic imports.
+
+Avoid anonymous functions in JSX to prevent re-creations on each render.

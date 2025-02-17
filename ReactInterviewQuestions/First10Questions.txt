@@ -376,3 +376,13 @@ Lazy load components using React.lazy and Suspense.
 Split code using dynamic imports.
 
 Avoid anonymous functions in JSX to prevent re-creations on each render.
+
+68. What are props in React?
+Props (short for properties) are read-only data passed from a parent component to a child component. They enable communication between components and allow customization of child components.
+
+Example:
+--------
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}

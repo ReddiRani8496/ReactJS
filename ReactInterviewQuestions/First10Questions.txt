@@ -360,11 +360,9 @@ function ControlledInput() {
 
 Lifecycle methods in class components include:
 
-componentDidMount: Executes after the component mounts.
-
-shouldComponentUpdate: Determines if a re-render is needed.
-
-componentWillUnmount: Executes before the component unmounts.
+=> componentDidMount: Executes after the component mounts.
+=> shouldComponentUpdate: Determines if a re-render is needed.
+=> componentWillUnmount: Executes before the component unmounts.
 
 67. How do you optimize performance in a React application?
 Ans:

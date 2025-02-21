@@ -383,3 +383,12 @@ Example:
 function Welcome(props) {
   return <h1>Hello, {props.name}!</h1>;
 }
+
+69. Explain the useEffect hook.
+useEffect is a React hook used for side effects such as fetching data, subscribing to events, or directly interacting with the DOM.
+
+Example:
+-------
+React.useEffect(() => {
+  console.log('Component mounted or updated');
+}, []); 

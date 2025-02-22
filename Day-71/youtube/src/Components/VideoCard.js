@@ -15,3 +15,12 @@ const VideoCard = ({ info }) => {
 };
 
 export default VideoCard;
+
+// higher order component
+export const AddVideoCard = ({ info }) => {
+  return (
+    <div className="p-1 m-1 border border-red-400">
+      <VideoCard info={info} />
+    </div>
+  );
+};

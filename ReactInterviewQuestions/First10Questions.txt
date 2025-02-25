@@ -393,8 +393,11 @@ React.useEffect(() => {
   console.log('Component mounted or updated');
 }, []); 
 
-What is the difference between state and props?
+70. What is the difference between state and props?
                 State	                                                      Props
 Managed within the component (mutable).	                  Passed from parent to child (immutable).
 Used for dynamic data that changes over time.	            Used for static or configuration data.
 Can be modified using setState or hooks like useState.	  Cannot be modified directly by the child component.
+
+71. How does reconciliation work in React?
+Reconciliation compares the virtual DOM with the previous version to determine minimal updates needed for rendering changes efficiently.

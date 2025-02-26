@@ -366,6 +366,7 @@ Lifecycle methods in class components include:
 
 67. How do you optimize performance in a React application?
 Ans:
+
 => Use React.memo to prevent unnecessary re-renders of functional components.
 => Use useCallback and useMemo hooks to memoize functions and values.
 => Lazy load components using React.lazy and Suspense.
@@ -385,6 +386,7 @@ function Welcome(props) {
 }
 
 69. Explain the useEffect hook.
+
 useEffect is a React hook used for side effects such as fetching data, subscribing to events, or directly interacting with the DOM.
 
 Example:
@@ -400,4 +402,5 @@ Used for dynamic data that changes over time.	            Used for static or con
 Can be modified using setState or hooks like useState.	  Cannot be modified directly by the child component.
 
 71. How does reconciliation work in React?
+Ans:
 Reconciliation compares the virtual DOM with the previous version to determine minimal updates needed for rendering changes efficiently.

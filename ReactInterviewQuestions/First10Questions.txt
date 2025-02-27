@@ -404,3 +404,7 @@ Can be modified using setState or hooks like useState.	  Cannot be modified dire
 71. How does reconciliation work in React?
 Ans:
 Reconciliation compares the virtual DOM with the previous version to determine minimal updates needed for rendering changes efficiently.
+
+72. What is the difference between useMemo and useCallback?
+Ans:
+ useMemo memoizes values while useCallback memoizes functions to optimize performance.

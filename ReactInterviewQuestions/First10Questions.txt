@@ -408,3 +408,7 @@ Reconciliation compares the virtual DOM with the previous version to determine m
 72. What is the difference between useMemo and useCallback?
 Ans:
  useMemo memoizes values while useCallback memoizes functions to optimize performance.
+
+73. How do you share state between multiple components?
+
+Ans: lifting state up, using context (useContext), or external libraries (e.g., Redux).

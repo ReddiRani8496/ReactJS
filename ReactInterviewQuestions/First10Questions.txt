@@ -412,3 +412,6 @@ Ans:
 73. How do you share state between multiple components?
 
 Ans: lifting state up, using context (useContext), or external libraries (e.g., Redux).
+
+74. What are higher-order components (HOCs)?
+Ans: HOCs as functions that take a component as input and return an enhanced component.

@@ -415,3 +415,7 @@ Ans: lifting state up, using context (useContext), or external libraries (e.g., 
 
 74. What are higher-order components (HOCs)?
 Ans: HOCs as functions that take a component as input and return an enhanced component.
+
+75. What are keys in React, and why are they important?
+
+Keys help React identify which elements have changed during updates, improving rendering efficiency.

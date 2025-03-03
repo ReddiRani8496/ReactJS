@@ -402,20 +402,16 @@ Used for dynamic data that changes over time.	            Used for static or con
 Can be modified using setState or hooks like useState.	  Cannot be modified directly by the child component.
 
 71. How does reconciliation work in React?
-Ans:
-Reconciliation compares the virtual DOM with the previous version to determine minimal updates needed for rendering changes efficiently.
+Ans: Reconciliation compares the virtual DOM with the previous version to determine minimal updates needed for rendering changes efficiently.
 
 72. What is the difference between useMemo and useCallback?
-Ans:
- useMemo memoizes values while useCallback memoizes functions to optimize performance.
+Ans: useMemo memoizes values while useCallback memoizes functions to optimize performance.
 
 73. How do you share state between multiple components?
-
 Ans: lifting state up, using context (useContext), or external libraries (e.g., Redux).
 
 74. What are higher-order components (HOCs)?
 Ans: HOCs as functions that take a component as input and return an enhanced component.
 
 75. What are keys in React, and why are they important?
-
-Keys help React identify which elements have changed during updates, improving rendering efficiency.
+Ans: Keys help React identify which elements have changed during updates, improving rendering efficiency.

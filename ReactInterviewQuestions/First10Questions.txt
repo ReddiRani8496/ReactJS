@@ -415,3 +415,6 @@ Ans: HOCs as functions that take a component as input and return an enhanced com
 
 75. What are keys in React, and why are they important?
 Ans: Keys help React identify which elements have changed during updates, improving rendering efficiency.
+
+76. What is the difference between React.Fragment and <div> wrappers?
+Ans: React.Fragment avoids adding extra nodes to the DOM while grouping child elements

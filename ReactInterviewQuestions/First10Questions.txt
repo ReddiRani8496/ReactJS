@@ -417,4 +417,10 @@ Ans: HOCs as functions that take a component as input and return an enhanced com
 Ans: Keys help React identify which elements have changed during updates, improving rendering efficiency.
 
 76. What is the difference between React.Fragment and <div> wrappers?
-Ans: React.Fragment avoids adding extra nodes to the DOM while grouping child elements
+Ans: React.Fragment avoids adding extra nodes to the DOM while grouping child elements.
+
+77. What is useRef, and how can it be used?
+Ans: useRef provides a mutable reference that persists across renders without causing re-renders:
+Example:
+const inputRef = useRef(null);
+inputRef.current.focus();

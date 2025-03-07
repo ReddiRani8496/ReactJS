@@ -424,3 +424,12 @@ Ans: useRef provides a mutable reference that persists across renders without ca
 Example:
 const inputRef = useRef(null);
 inputRef.current.focus();
+
+78. What is the difference between React.Fragment and <div> wrappers?
+Ans: React.Fragment groups elements without adding extra nodes to the DOM:
+
+Example:
+<React.Fragment>
+  <Child1 />
+  <Child2 />
+</React.Fragment>

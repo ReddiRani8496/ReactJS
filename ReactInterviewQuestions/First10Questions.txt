@@ -433,3 +433,9 @@ Example:
   <Child1 />
   <Child2 />
 </React.Fragment>
+
+79. What is the difference between useMemo and useCallback?
+Ans: useMemo memoizes a computed value, while useCallback memoizes a function:
+
+const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+const memoizedCallback = useCallback(() => doSomething(a), [a]);

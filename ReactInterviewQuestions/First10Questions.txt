@@ -439,3 +439,16 @@ Ans: useMemo memoizes a computed value, while useCallback memoizes a function:
 
 const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 const memoizedCallback = useCallback(() => doSomething(a), [a]);
+
+80. Can React Hooks fully replace Redux for state management? Explain why or why not?
+Ans:React Hooks can partially replace Redux for state management, especially in smaller to medium-sized applications or when managing local component states. 
+However, they may not fully replace Redux in all scenarios, particularly for large-scale applications requiring complex global state management.
+
+Why React Hooks Can Replace Redux in Some Cases:
+1. Simpler state management
+2. Uses useContext
+3. Performance and Simplicity
+
+Why React Hooks May Not Fully Replace Redux:
+Complexity and Scalability
+Middleware support

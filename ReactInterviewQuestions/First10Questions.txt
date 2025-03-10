@@ -452,3 +452,16 @@ Why React Hooks Can Replace Redux in Some Cases:
 Why React Hooks May Not Fully Replace Redux:
 Complexity and Scalability
 Middleware support
+
+81. How would you optimize performance in a React app with large component trees?
+Ans: Optimizing performance in a React app with large component trees involves several strategies to reduce unnecessary re-renders, manage state efficiently, and improve rendering efficiency.
+1. Lazy Loading
+Use React.lazy and Suspense to load components only when they are needed. This reduces the initial component tree size and improves load times.
+2. Code Splitting
+Implement code splitting using Webpack to divide your app into smaller chunks that load on demand. This reduces the initial bundle size and improves performance.
+3. Memoization
+Use React.memo or useMemo to prevent unnecessary re-renders by memoizing components or values that don't change frequently.
+4. Optimize Component Rendering
+Avoid unnecessary re-renders by using shouldComponentUpdate or PureComponent. Also, avoid inline functions and use useCallback to memoize event handlers.
+5. Virtualize Long Lists
+Use libraries like react-window or react-virtualized to render only visible items in long lists, reducing DOM elements and improving scrolling performance

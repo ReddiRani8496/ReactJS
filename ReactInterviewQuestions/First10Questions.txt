@@ -465,3 +465,7 @@ Use React.memo or useMemo to prevent unnecessary re-renders by memoizing compone
 Avoid unnecessary re-renders by using shouldComponentUpdate or PureComponent. Also, avoid inline functions and use useCallback to memoize event handlers.
 5. Virtualize Long Lists
 Use libraries like react-window or react-virtualized to render only visible items in long lists, reducing DOM elements and improving scrolling performance
+
+82. Explain React's Strict Mode and its impact on development.
+Ans: React Strict Mode is a development tool designed to help developers identify potential issues in their React applications early in the development process. 
+It provides additional checks and warnings to ensure that the code adheres to best practices and catches common problems such as unsafe lifecycle methods, deprecated APIs, and potential side effects.

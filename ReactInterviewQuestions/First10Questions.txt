@@ -469,3 +469,11 @@ Use libraries like react-window or react-virtualized to render only visible item
 82. Explain React's Strict Mode and its impact on development.
 Ans: React Strict Mode is a development tool designed to help developers identify potential issues in their React applications early in the development process. 
 It provides additional checks and warnings to ensure that the code adheres to best practices and catches common problems such as unsafe lifecycle methods, deprecated APIs, and potential side effects.
+
+83. How can you prevent unnecessary re-renders in React functional components?
+Ans:   React.memo
+useMemo
+callback
+Avoid Passing Unnecessary Props
+useRef
+Using Keys for Lists

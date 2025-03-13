@@ -477,3 +477,6 @@ callback
 Avoid Passing Unnecessary Props
 useRef
 Using Keys for Lists
+
+84. What is the significance of the React Fiber architecture?
+Ans: The React Fiber architecture is a significant enhancement to the React library, designed to improve performance, responsiveness, and efficiency in managing complex user interfaces.

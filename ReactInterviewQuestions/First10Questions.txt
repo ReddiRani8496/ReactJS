@@ -484,3 +484,6 @@ Ans: The React Fiber architecture is a significant enhancement to the React libr
 85. How would you implement dynamic form handling and validation in React?
 Ans: Implementing dynamic form handling and validation in React involves several steps, including setting up a dynamic form structure, handling form state changes, and validating user input.
 By using formik hook.
+
+86. How would you handle errors in a React app, and what is the role of error boundaries?
+Ans: Error handling in React involves strategies to ensure the application remains stable and user-friendly even when unexpected issues occur. React provides several mechanisms for error handling, including error boundaries, try-catch blocks, and external libraries like react-error-boundary.

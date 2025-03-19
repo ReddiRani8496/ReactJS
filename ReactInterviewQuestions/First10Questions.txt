@@ -490,3 +490,13 @@ Ans: Error handling in React involves strategies to ensure the application remai
 
 87. How would you re-render a component when the window is resized?
 Ans: To re-render a React component when the browser window is resized, you can use the useEffect hook along with the window.addEventListener method to listen for the resize event.
+
+88. How do you handle styling in React components? Discuss different approaches.
+Ans: Styling in React components can be approached in several ways, each with its own advantages and use cases. Below is an overview of the most common techniques:
+
+1. Inline Styling
+Inline styles are applied directly to elements using the style attribute in JSX. These styles are defined as JavaScript objects, with CSS properties written in camelCase.
+2. CSS Stylesheets
+3. CSS Modules
+4. Styled-Components
+5. Utility-Based Frameworks (e.g., Tailwind CSS)

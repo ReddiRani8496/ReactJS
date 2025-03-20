@@ -500,3 +500,11 @@ Inline styles are applied directly to elements using the style attribute in JSX.
 3. CSS Modules
 4. Styled-Components
 5. Utility-Based Frameworks (e.g., Tailwind CSS)
+
+89. What is the role of React Router, and how does it work with dynamic routing?
+Ans: React Router plays a crucial role in enabling navigation and dynamic routing in React applications.
+React Router is a JavaScript library that facilitates routing in React applications, particularly single-page applications (SPAs). It allows developers to:
+
+Define multiple routes and specify which components to render for each route.
+Keep the user interface (UI) in sync with the URL, enabling seamless navigation without reloading the page.
+Manage both client-side and server-side routing, making it versatile for various use cases.

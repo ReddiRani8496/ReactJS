@@ -489,9 +489,11 @@ By using formik hook.
 Ans: Error handling in React involves strategies to ensure the application remains stable and user-friendly even when unexpected issues occur. React provides several mechanisms for error handling, including error boundaries, try-catch blocks, and external libraries like react-error-boundary.
 
 87. How would you re-render a component when the window is resized?
+
 Ans: To re-render a React component when the browser window is resized, you can use the useEffect hook along with the window.addEventListener method to listen for the resize event.
 
 88. How do you handle styling in React components? Discuss different approaches.
+
 Ans: Styling in React components can be approached in several ways, each with its own advantages and use cases. Below is an overview of the most common techniques:
 
 1. Inline Styling
@@ -502,5 +504,7 @@ Inline styles are applied directly to elements using the style attribute in JSX.
 5. Utility-Based Frameworks (e.g., Tailwind CSS)
 
 89. What is the role of React Router, and how does it work with dynamic routing?
+
 Ans: React Router plays a crucial role in enabling navigation and dynamic routing in React applications.
 React Router is a JavaScript library that facilitates routing in React applications, particularly single-page applications (SPAs). It allows developers to:
+Install using react router dom.

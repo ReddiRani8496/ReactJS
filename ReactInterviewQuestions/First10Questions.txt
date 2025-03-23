@@ -508,3 +508,14 @@ Inline styles are applied directly to elements using the style attribute in JSX.
 Ans: React Router plays a crucial role in enabling navigation and dynamic routing in React applications.
 React Router is a JavaScript library that facilitates routing in React applications, particularly single-page applications (SPAs). It allows developers to:
 Install using react router dom.
+
+90. What are the benefits of server-side rendering (SSR) in React applications?
+Ans: Server-side rendering (SSR) in React applications offers several key benefits:
+
+Benefits of Server-Side Rendering in React
+Faster Initial Load Times:
+Improved SEO
+Enhanced Performance on Slow Networks
+Better user experience
+Enhanced Security
+Social Media Optimization

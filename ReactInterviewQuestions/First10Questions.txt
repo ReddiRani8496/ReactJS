@@ -512,10 +512,16 @@ Install using react router dom.
 90. What are the benefits of server-side rendering (SSR) in React applications?
 Ans: Server-side rendering (SSR) in React applications offers several key benefits:
 
-Benefits of Server-Side Rendering in React
-Faster Initial Load Times:
+Faster Initial Load Times
 Improved SEO
 Enhanced Performance on Slow Networks
 Better user experience
 Enhanced Security
 Social Media Optimization
+
+91. How would you optimize React app performance when handling large lists or grids?
+Ans: Optimizing React app performance when handling large lists or grids involves several strategies that focus on reducing unnecessary computations and minimizing the number of DOM elements rendered.
+a. Vitualization
+b. Optimizing component rendering
+c. Effecient state management
+d. Code splitting, lazy loading

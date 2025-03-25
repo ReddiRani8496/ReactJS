@@ -521,7 +521,26 @@ Social Media Optimization
 
 91. How would you optimize React app performance when handling large lists or grids?
 Ans: Optimizing React app performance when handling large lists or grids involves several strategies that focus on reducing unnecessary computations and minimizing the number of DOM elements rendered.
-a. Vitualization
+a. Virtualization
 b. Optimizing component rendering
 c. Effecient state management
 d. Code splitting, lazy loading
+
+92. How do you handle asynchronous code execution and state updates in React?
+Ans: Handling asynchronous code execution and state updates in React is crucial for building responsive and efficient applications. Here are some strategies to manage these processes effectively:
+Handling Asynchronous Code Execution
+
+Using Async/Await
+Async/await syntax simplifies asynchronous code by making it resemble synchronous code. An async function returns a Promise, and the await keyword pauses its execution until the Promise is resolved.
+
+Using Promises
+Promises are another way to handle asynchronous operations. They provide methods like .then() and .catch() to handle resolved or rejected states.
+
+function fetchData(url) {
+  return fetch(url)
+    .then(response => response.json())
+    .catch(error => console.error('Error fetching data:', error));
+}
+
+Using Callbacks
+Callbacks are functions passed as arguments to other functions, allowing for asynchronous execution.

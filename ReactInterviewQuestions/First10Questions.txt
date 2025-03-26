@@ -544,3 +544,5 @@ function fetchData(url) {
 
 Using Callbacks
 Callbacks are functions passed as arguments to other functions, allowing for asynchronous execution.
+Example:
+

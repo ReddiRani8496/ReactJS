@@ -544,5 +544,49 @@ function fetchData(url) {
 
 Using Callbacks
 Callbacks are functions passed as arguments to other functions, allowing for asynchronous execution.
-Example:
 
+Example:
+function fetchData(url, callback) {
+  fetch(url)
+    .then(response => response.json())
+    .then(data => callback(data))
+    .catch(error => console.error('Error fetching data:', error));
+}
+
+93.  How would you implement custom hooks to abstract logic in React?
+Ans: mplementing custom hooks in React is a powerful way to abstract and reuse logic across components, enhancing code maintainability and readability. Here's a step-by-step guide on how to create and use custom hooks:
+
+1. Identify Repetitive Logic
+Identify any repetitive logic or functionality that you want to reuse across multiple components. This could be anything from data fetching to form handling.
+
+2. Create a Custom Hook
+Create a new JavaScript function that starts with the use prefix. For example, if you're creating a hook for fetching data, you might name it useFetch.
+import { useState, useEffect } from "react";
+
+const useFetch = (url) => {
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        setData(data);
+      } catch (error) {
+        setError(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
+  }, [url]);
+
+  return { data, error, loading };
+};
+
+export default useFetch;

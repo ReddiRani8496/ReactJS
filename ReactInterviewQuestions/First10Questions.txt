@@ -625,3 +625,12 @@ const withExtraProp = (WrappedComponent) => {
 };
 
 export default withExtraProp;
+
+Key Features of HOCs
+Reusability: HOCs allow us to encapsulate shared logic and apply it to multiple components, reducing code duplication and promoting the DRY (Don't Repeat Yourself) principle.
+
+Separation of Concerns: They help maintain clear boundaries between different functionalities, allowing components to focus on their specific tasks.
+
+Code Abstraction: Common logic is abstracted into the HOC, making individual components more concise and easier to maintain.
+
+Composability: Multiple HOCs can be combined to create complex functionalities in a modular way.

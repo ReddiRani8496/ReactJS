@@ -638,3 +638,15 @@ Composability: Multiple HOCs can be combined to create complex functionalities i
 95. What is crossorigin and why do we use it in React CDN?
 
 CORS or cross-origin resource sharing is a mechanism that allows memory resources (e.g., fonts, JavaScript, etc.) on a webpage to be requested from another domain outside the domain from which the resource originated.
+
+96. Where should I put the <script> tag? In the <head> or <body>?
+
+The reason it was recommended to put <script> tags at the end of the <body> was so that the scripts wouldn’t stop the browser from parsing the HTML.
+
+When a browser gets to a <script> tag, it stops everything else and loads the files for that <script> tag and then evaluates it.
+
+Thus, if you put <script> tag in the <head> or at the beginning of the <body>, then the user would have to wait longer for the HTML to render, possibly leaving them staring at a blank page for a while.
+
+Nowadays this isn’t really a concern anymore because you can force the browser to download/evaluate JS files asynchronously by using the async/defer attribute on the <script> tag.
+
+Be advised, these attributes only work for <script> tags loading external JS files (i.e., the src attribute is pointing to a file).

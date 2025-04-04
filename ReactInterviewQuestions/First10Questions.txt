@@ -652,6 +652,7 @@ Nowadays this isn’t really a concern anymore because you can force the browser
 Be advised, these attributes only work for <script> tags loading external JS files (i.e., the src attribute is pointing to a file).
 
 97. What is the difference between React and React-dom?
-React is a JavaScript library, designed for building better user interfaces.
-React-dom is a complementary library to React which glues React to the browser DOM.
-While React provides the tools and concepts to define component-based user interfaces, React-dom handles the task of rendering those interfaces in a web environment.
+Ans:
+-> React is a JavaScript library, designed for building better user interfaces.
+-> React-dom is a complementary library to React which glues React to the browser DOM.
+-> While React provides the tools and concepts to define component-based user interfaces, React-dom handles the task of rendering those interfaces in a web environment.

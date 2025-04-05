@@ -641,18 +641,20 @@ CORS or cross-origin resource sharing is a mechanism that allows memory resource
 
 96. Where should I put the <script> tag? In the <head> or <body>?
 
-The reason it was recommended to put <script> tags at the end of the <body> was so that the scripts wouldn’t stop the browser from parsing the HTML.
+=> The reason it was recommended to put <script> tags at the end of the <body> was so that the scripts wouldn’t stop the browser from parsing the HTML.
 
-When a browser gets to a <script> tag, it stops everything else and loads the files for that <script> tag and then evaluates it.
+=> When a browser gets to a <script> tag, it stops everything else and loads the files for that <script> tag and then evaluates it.
 
-Thus, if you put <script> tag in the <head> or at the beginning of the <body>, then the user would have to wait longer for the HTML to render, possibly leaving them staring at a blank page for a while.
+=> Thus, if you put <script> tag in the <head> or at the beginning of the <body>, then the user would have to wait longer for the HTML to render, possibly leaving them staring at a blank page for a while.
 
-Nowadays this isn’t really a concern anymore because you can force the browser to download/evaluate JS files asynchronously by using the async/defer attribute on the <script> tag.
+=> Nowadays this isn’t really a concern anymore because you can force the browser to download/evaluate JS files asynchronously by using the async/defer attribute on the <script> tag.
 
-Be advised, these attributes only work for <script> tags loading external JS files (i.e., the src attribute is pointing to a file).
+=> Be advised, these attributes only work for <script> tags loading external JS files (i.e., the src attribute is pointing to a file).
 
 97. What is the difference between React and React-dom?
 Ans:
 -> React is a JavaScript library, designed for building better user interfaces.
+
 -> React-dom is a complementary library to React which glues React to the browser DOM.
+
 -> While React provides the tools and concepts to define component-based user interfaces, React-dom handles the task of rendering those interfaces in a web environment.

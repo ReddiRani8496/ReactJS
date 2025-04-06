@@ -658,3 +658,6 @@ Ans:
 -> React-dom is a complementary library to React which glues React to the browser DOM.
 
 -> While React provides the tools and concepts to define component-based user interfaces, React-dom handles the task of rendering those interfaces in a web environment.
+
+98. Why React is called React?
+Ans: React is called "React" because it embodies the principle of reactivity—it "reacts" to changes in the state or props of components and updates the user interface accordingly. This name reflects its core functionality, where the library efficiently updates only the necessary parts of the DOM (Document Object Model) rather than re-rendering the entire page, ensuring a seamless and dynamic user experience

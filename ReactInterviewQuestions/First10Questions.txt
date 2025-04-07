@@ -661,3 +661,14 @@ Ans:
 
 98. Why React is called React?
 Ans: React is called "React" because it embodies the principle of reactivity—it "reacts" to changes in the state or props of components and updates the user interface accordingly. This name reflects its core functionality, where the library efficiently updates only the necessary parts of the DOM (Document Object Model) rather than re-rendering the entire page, ensuring a seamless and dynamic user experience
+
+99. Why Jest and Its Importance in React
+Jest is a popular JavaScript testing framework created by Meta (formerly Facebook) and is widely used for testing React applications. It has become a developer favorite due to its simplicity, powerful features, and seamless integration with React.
+
+Key Features of Jest
+Zero Configuration: Jest works out of the box without requiring extensive setup, making it easy to start testing JavaScript projects, especially React applications.
+Snapshot Testing: This feature captures the current state of the UI and compares it against saved snapshots to detect unintended changes in the application's output.
+Test Isolation: Jest ensures that tests run in parallel and independently, preventing interference between tests.
+Mocking: Built-in mocking capabilities allow developers to replace complex dependencies with simpler versions during testing, making it easier to test components that rely on external APIs or services.
+Code Coverage: Jest can generate detailed code coverage reports to help identify untested parts of the codebase.
+Rich API: It offers a wide range of assertion types and utilities for writing robust tests

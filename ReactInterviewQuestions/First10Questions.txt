@@ -627,17 +627,14 @@ const withExtraProp = (WrappedComponent) => {
 export default withExtraProp;
 
 Key Features of HOCs
+--------------------
 Reusability: HOCs allow us to encapsulate shared logic and apply it to multiple components, reducing code duplication and promoting the DRY (Don't Repeat Yourself) principle.
-
 Separation of Concerns: They help maintain clear boundaries between different functionalities, allowing components to focus on their specific tasks.
-
 Code Abstraction: Common logic is abstracted into the HOC, making individual components more concise and easier to maintain.
-
 Composability: Multiple HOCs can be combined to create complex functionalities in a modular way.
 
 95. What is crossorigin and why do we use it in React CDN?
-
-CORS or cross-origin resource sharing is a mechanism that allows memory resources (e.g., fonts, JavaScript, etc.) on a webpage to be requested from another domain outside the domain from which the resource originated.
+Ans:CORS or cross-origin resource sharing is a mechanism that allows memory resources (e.g., fonts, JavaScript, etc.) on a webpage to be requested from another domain outside the domain from which the resource originated.
 
 96. Where should I put the <script> tag? In the <head> or <body>?
 

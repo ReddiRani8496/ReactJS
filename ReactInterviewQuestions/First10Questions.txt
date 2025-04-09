@@ -669,3 +669,5 @@ Test Isolation: Jest ensures that tests run in parallel and independently, preve
 Mocking: Built-in mocking capabilities allow developers to replace complex dependencies with simpler versions during testing, making it easier to test components that rely on external APIs or services.
 Code Coverage: Jest can generate detailed code coverage reports to help identify untested parts of the codebase.
 Rich API: It offers a wide range of assertion types and utilities for writing robust tests
+
+100. 

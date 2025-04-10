@@ -670,4 +670,24 @@ Mocking: Built-in mocking capabilities allow developers to replace complex depen
 Code Coverage: Jest can generate detailed code coverage reports to help identify untested parts of the codebase.
 Rich API: It offers a wide range of assertion types and utilities for writing robust tests
 
-100. 
+100. Types of tests in react.
+
+Unit Tests:
+Test individual components in isolation (e.g., button clicks or state changes).
+Example: Checking if a button is disabled based on input length.
+
+Integration Tests:
+Verify interactions between multiple components.
+Example: Simulating user events like form submissions and checking DOM updates.
+
+End-to-End (E2E) Tests:
+Simulate complete user workflows across the app using tools like Cypress.
+Snapshot Tests:
+Compare rendered output of components to saved snapshots to detect unintended UI changes.
+
+Unit test case:
+const sum = require('./sum');
+
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
+});

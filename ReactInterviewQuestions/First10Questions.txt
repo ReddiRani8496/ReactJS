@@ -691,3 +691,28 @@ const sum = require('./sum');
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
 });
+
+ function capitalize(str) {
+  if (!str) return '';
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+module.exports = capitalize;
+const capitalize = require('./capitalize');
+
+test('capitalizes the first letter of a word', () => {
+  expect(capitalize('hello')).toBe('Hello');
+});
+
+test('returns an empty string when input is empty', () => {
+  expect(capitalize('')).toBe('');
+});
+
+test('handles single character strings', () => {
+  expect(capitalize('a')).toBe('A');
+});
+
+test('does not change already capitalized strings', () => {
+  expect(capitalize('World')).toBe('World');
+});
+

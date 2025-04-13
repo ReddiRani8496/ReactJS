@@ -716,3 +716,5 @@ test('does not change already capitalized strings', () => {
   expect(capitalize('World')).toBe('World');
 });
 
+101. what is jscookies?
+JS Cookies refers to the concept of handling cookies in JavaScript, which are small pieces of data stored in a user's browser. These cookies are used to retain information about users, such as their preferences, session data, or authentication details. Cookies are stored as key-value pairs and are transmitted between the browser and server during web requests.

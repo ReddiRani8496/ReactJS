@@ -726,3 +726,18 @@ function setCookie(cname, cvalue, exdays) {
   let expires = "expires="+ d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
+
+A Function to Check a Cookie:
+-----------------------------
+If the cookie is not set, it will display a prompt box, asking for the name of the user, and stores the username cookie for 365 days, by calling the setCookie function:
+function checkCookie() {
+  let username = getCookie("username");
+  if (username != "") {
+   alert("Welcome again " + username);
+  } else {
+    username = prompt("Please enter your name:", "");
+    if (username != "" && username != null) {
+      setCookie("username", username, 365);
+    }
+  }
+}

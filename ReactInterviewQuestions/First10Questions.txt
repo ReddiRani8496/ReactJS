@@ -741,3 +741,6 @@ function checkCookie() {
     }
   }
 }
+
+const expiryDate = new Date('2025-05-17T16:21:42.000Z'); 
+Cookies.set('token', 'abc123', { expires: expiryDate });

@@ -3,7 +3,7 @@ import "./App.css";
 import ProgressBar from "./Components/ProgressBar";
 
 function App() {
-  const bars = [0, 5, 10, 30, 50, 70, 90, 100];
+  const bars = [0, 3, 5, 10, 30, 50, 70, 80, 90, 100];
   return (
     <div className="App">
       <h1>Progress Bar</h1>

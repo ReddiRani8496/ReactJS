@@ -14,7 +14,7 @@ function ProgressBar({ progress }) {
         className="inner"
         style={{
           transform: `translateX(-${100 - animatedProgress}%)`,
-          color: animatedProgress >= 5 ? "white" : "black",
+          color: animatedProgress > 5 ? "white" : "black",
         }}
         role="progressbar"
         aria-valuenow={animatedProgress}

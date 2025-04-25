@@ -24,7 +24,26 @@ const checkboxesData = [
 ];
 
 function CheckBoxes() {
-  return <div>CheckBoxes</div>;
+  return (
+    <div>
+      {checkboxesData.map((node) => {
+        <div key={node.id}>
+          <input type="checkbox" id={node.id} />
+          <label htmlFor={node.id}>{node.name}</label>
+          {node.children && node.children.length > 0 && (
+            <div style={{ paddingLeft: "20px" }}>
+              {node.children.map((child) => (
+                <div key={child.id}>
+                  <input type="checkbox" id={child.id} />
+                  <label htmlFor={child.id}>{child.name}</label>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>;
+      })}
+    </div>
+  );
 }
 
 export default CheckBoxes;

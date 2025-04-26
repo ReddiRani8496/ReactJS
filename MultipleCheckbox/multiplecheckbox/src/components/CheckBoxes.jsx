@@ -26,7 +26,7 @@ const checkboxesData = [
 function CheckBoxes() {
   return (
     <div>
-      {checkboxesData.map((node) => {
+      {checkboxesData.map((node) => (
         <div key={node.id}>
           <input type="checkbox" id={node.id} />
           <label htmlFor={node.id}>{node.name}</label>
@@ -40,8 +40,8 @@ function CheckBoxes() {
               ))}
             </div>
           )}
-        </div>;
-      })}
+        </div>
+      ))}
     </div>
   );
 }

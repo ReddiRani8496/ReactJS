@@ -24,10 +24,10 @@ const checkboxesData = [
 ];
 
 function CheckBoxes({ data, checked, setChecked }) {
-  const handleChange = (e, id) => {
+  const handleChange = (isChecked, node) => {
     setChecked((prev) => ({
       ...prev,
-      [id]: e.target.checked,
+      [node.id]: isChecked,
     }));
   };
   return (
@@ -38,7 +38,7 @@ function CheckBoxes({ data, checked, setChecked }) {
             type="checkbox"
             id={node.id}
             checked={checked[node?.id] || false}
-            onChange={(e) => handleChange(e, node.id)}
+            onChange={(e) => handleChange(e.target.checked, node)}
           />
           <label htmlFor={node.id}>{node.name}</label>
           {node.children && (

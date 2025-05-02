@@ -34,7 +34,7 @@ function App() {
           <div
             key={index}
             style={{
-              backgroundColor: "#007bff",
+              backgroundColor: "gray",
               color: "white",
               padding: "5px 10px",
               borderRadius: "20px",

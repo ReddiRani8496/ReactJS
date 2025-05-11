@@ -16,3 +16,9 @@ const factorial1 = (num) => {
   return num * factorial1(num - 1);
 };
 console.log("factorial of 3 ", factorial1(3));
+
+// approach-3
+const factorial2 = (num) => {
+  return num === 0 || num === 1 ? 1 : num * factorial2(num - 1);
+};
+console.log("factorial of 3 ", factorial2(3));

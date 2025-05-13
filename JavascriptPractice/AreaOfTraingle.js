@@ -9,3 +9,4 @@ const areaOfTraingle1 = (length, breadth) => {
 };
 
 console.log("Area of Traingle ", areaOfTraingle1(2, 3)); // 3
+console.log("Area of Traingle ", areaOfTraingle1(4, 5)); // 10

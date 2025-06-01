@@ -20,7 +20,8 @@ console.log(moveZerosToEnd(arr)); // Output: [1, 3, 12, 0, 0]
 
 // approach -2
 
-let arr1 = [0, 1, 0, 3, 12];
+let arr1 = [0, 1, 0, 3, 0, 12];
+
 const moveZerosToEnd1 = (arr) => {
   let zeroCount = 0; // Count of zeros
 
@@ -42,3 +43,6 @@ const moveZerosToEnd1 = (arr) => {
   return arr;
 };
 console.log(moveZerosToEnd1(arr1)); // Output: [1, 3, 12, 0, 0]
+
+let arr2 = [1, 0, 0, 3, 12, 0, 0, 0, 4];
+console.log(moveZerosToEnd1(arr2)); // Output: [1, 3, 12, 4, 0, 0, 0, 0, 0]

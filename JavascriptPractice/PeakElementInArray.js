@@ -8,7 +8,7 @@ const findPeakElement = (array) => {
       (i === 0 || array[i] >= array[i - 1]) &&
       (i === array.length - 1 || array[i] >= array[i + 1])
     ) {
-      return i; // Return the index of the peak element
+      return i;
     }
   }
 

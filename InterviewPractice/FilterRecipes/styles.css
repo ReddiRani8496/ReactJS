@@ -1,0 +1,44 @@
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.subHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartTitle {
+  font-weight: bold;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recipeCard {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  height: 250px;
+  width: 200px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 10px;
+
+  button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

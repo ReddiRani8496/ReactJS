@@ -1,11 +1,10 @@
-import logo from "./logo.svg";
+import AnagramChecker from "./AnagramChecker";
 import "./App.css";
-import A from "./A";
 
 function App() {
   return (
     <div className="App">
-      <A />
+      <AnagramChecker />
     </div>
   );
 }

@@ -7,4 +7,7 @@ function isPowerOfThree(n) {
   }
   return n == 1;
 }
-module.exports = { isPowerOfThree };
+
+console.log(isPowerOfThree(10));
+
+console.log(isPowerOfThree(27));

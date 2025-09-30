@@ -25,6 +25,7 @@ const styles = {
     justifyContent: "center",
     overflow: "hidden",
   },
+
   progressFill: (percentage) => ({
     position: "absolute",
     left: 0,
@@ -35,6 +36,7 @@ const styles = {
     borderRadius: "15px",
     zIndex: 1,
   }),
+
   progressText: {
     position: "relative",
     zIndex: 2,

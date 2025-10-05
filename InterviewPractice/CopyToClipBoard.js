@@ -56,6 +56,7 @@ function CopyClipboard() {
               onChange={(e) => setText(e.target.value)}
             />
           </label>
+
           <button
             onClick={handleCopy}
             className="btn"
@@ -63,11 +64,13 @@ function CopyClipboard() {
           >
             Copy
           </button>
+
           {copied && (
             <p data-testid="copied-message" style={{ color: "green" }}>
               Copied!
             </p>
           )}
+
           {error && (
             <p data-testid="error-message" style={{ color: "red" }}>
               {error}

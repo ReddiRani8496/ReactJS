@@ -41,7 +41,7 @@ function MortgageCalculator() {
     const rate = parseNum(annualInterest);
     const yrs = parseNum(years);
 
-    const bad =
+    const invalidInput =
       !Number.isFinite(P) ||
       P < 0 ||
       !Number.isFinite(rate) ||
@@ -49,7 +49,7 @@ function MortgageCalculator() {
       !Number.isFinite(yrs) ||
       yrs <= 0;
 
-    if (bad) {
+    if (invalidInput) {
       setError("Invalid input");
       return;
     }

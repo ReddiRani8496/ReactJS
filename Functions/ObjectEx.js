@@ -15,3 +15,4 @@ console.log(
     ", eyecolor: " +
     person.eyeColor
 );
+console.log("access age: ", person["age"]);

@@ -16,3 +16,6 @@ console.log(
     person.eyeColor
 );
 console.log("access age: ", person["age"]);
+console.log("access first name: ", person["firstName"]);
+console.log("access last name: ", person["lastName"]);
+console.log("access eye color", person["eyeColor"]);

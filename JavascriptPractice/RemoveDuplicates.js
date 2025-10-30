@@ -21,4 +21,4 @@ const removeDuplicates2 = (arr) => {
 console.log(
   "Array after removing duplicates using Set:",
   removeDuplicates2(arr)
-); // Output: [
+);

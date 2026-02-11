@@ -1,2 +1,2 @@
 let fruit = "      apple   ";
-console.log(fruit);
+console.log(fruit.trimStart());

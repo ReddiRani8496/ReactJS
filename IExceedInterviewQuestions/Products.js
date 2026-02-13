@@ -9,28 +9,22 @@ const products = [
 //   Fashion: ["Nike Shoes"]
 // }
 
-const electronics = [];
-const fashion = [];
+const result = {};
 
-const addToElectorincs = (product) => {
-  electronics.push(product);
+const addToCategory = (product) => {
+  if (result[product.category]) {
+    result[product.category].push(product.name);
+  } else {
+    result[product.category] = [product.name];
+  }
 };
 
-const addToFashionCategory = (product) => {
-  fashion.push(product);
-};
-
-function categoriseProducts(products, electoronicCategory, fashionCategory) {
+function categoriseProducts(products, addToCategory) {
   for (let i = 0; i < products.length; i++) {
-    if (products[i].category == "Electronics") {
-      electoronicCategory(products[i].name);
-    } else if (products[i].category == "Fashion") {
-      fashionCategory(products[i].name);
-    }
+    addToCategory(products[i]);
   }
 }
 
-categoriseProducts(products, addToElectorincs, addToFashionCategory);
+categoriseProducts(products, addToCategory);
 
-let result = { Electronics: electronics, Fashion: fashion };
 console.log(result);

@@ -1,0 +1,3 @@
+Event Bubbling:
+
+when an event is triggered, it will go from child to parent.

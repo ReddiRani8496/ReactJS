@@ -1,3 +1,7 @@
 Event Bubbling:
 
 when an event is triggered, it will go from child to parent.
+
+Event Capturing:
+
+When an event is triggered it will go from the parent to when it is clicked.

@@ -1,0 +1,5 @@
+We can access the variables before it is declared it is called as Variable hoisting.
+Example:
+
+console.log(a); // undefined
+var a = 10;

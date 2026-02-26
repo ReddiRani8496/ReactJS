@@ -1,5 +1,16 @@
-We can access the variables before it is declared it is called as Variable hoisting.
-Example:
+Variable hoisting is JavaScript’s default behavior of moving variable and function declarations to the top of their scope (before code execution).
+
+This means we can reference variables before they are declared in the code — but only their declaration is hoisted, not their initialization.
 
 console.log(a); // undefined
 var a = 10;
+
+var a;        // hoisted (declaration moved to top)
+console.log(a); // undefined
+a = 10;       // initialization happens here
+
+
+Hoisting using let and const:
+
+console.log(b); // ReferenceError
+let b = 20;

@@ -1,0 +1,9 @@
+Coercion in JavaScript is the automatic or explicit conversion of a value from one data type to another.
+
+JavaScript is a dynamically typed language, so type conversion happens frequently during operations.
+
+There are two types of coercion:
+
+Implicit Coercion (Type Conversion done by JS automatically)
+
+Explicit Coercion (Type Conversion done manually by developer)

@@ -1,0 +1,4 @@
+Whenever JavaScript is loaded in the browser global execution context is created.
+It has two parts Memory area and code area.
+Memory area is also called as the Variable Environment.
+Code area is also called as Code of execution.

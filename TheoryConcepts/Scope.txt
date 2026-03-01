@@ -1,0 +1,6 @@
+Scope: scope determines where variables and functions are accessible in  code.
+
+Lexical Environment: Whenever an execution context is created Lexical Environment is created.
+Lexical Environment is the local memory along with the Lexical Environment of it's parent.
+
+Scope Chain: The mechanism of searching variables in the subsequent lexical Environment is called scope chain.

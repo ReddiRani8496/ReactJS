@@ -1,0 +1,1 @@
+Block: group of statements to use where js expects single line as statement.

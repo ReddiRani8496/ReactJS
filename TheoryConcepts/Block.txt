@@ -1,1 +1,16 @@
 Block: group of statements to use where js expects single line as statement.
+
+Example:
+
+if
+let a = 10;
+console.log(a); // shows error because will take only one line.
+
+
+
+Solution
+
+if {
+    let a = 10;
+    console.log(a);
+}

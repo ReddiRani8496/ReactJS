@@ -1,0 +1,7 @@
+1. Self Introduction.
+2. Appreciation in previous company.
+3. New thing that I implemented in previous company.
+4. About skills added what technologies i am currently using in the company.
+5. What is the ticketing system we are using.
+6. If any issue is raised how you will think and how you will fix it?
+7. Estimations timings on new development.

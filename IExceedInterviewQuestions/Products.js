@@ -28,3 +28,7 @@ function categoriseProducts(products, addToCategory) {
 categoriseProducts(products, addToCategory);
 
 console.log(result);
+
+restult[products.category] = [product.name];
+
+result[product.category].push(print);

@@ -5,3 +5,8 @@ when an event is triggered, it will go from child to parent.
 Event Capturing:
 
 When an event is triggered it will go from the parent to when it is clicked.
+
+Event Delegation:
+
+Instead of adding event listeners in every child, will add to parent, so that it will be easy to maintain,
+it will improve the performance as well.

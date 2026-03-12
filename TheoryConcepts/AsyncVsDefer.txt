@@ -1,0 +1,15 @@
+Async:
+
+<script async src=.. ></script>
+
+=> Html parsing will be doing by the browser, simultaneously script will be Fetched.
+=> After scripts fetched, html parsing will stop and browser executes scripts.
+=> After scripts execution is completed, html parsing will continue.
+
+
+Defer:
+
+<script defer src=..></script>
+
+=> Html parsing will be doing by the browser, simultaneously script will be Fetched.
+=> Afer Html parsing completes, browser will executes the scripts.

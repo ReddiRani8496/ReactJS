@@ -1,0 +1,3 @@
+what is clouser?
+what are higher order function?
+Remove duplicate array elements

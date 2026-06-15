@@ -9,26 +9,28 @@ const products = [
 //   Fashion: ["Nike Shoes"]
 // }
 
-const result = {};
+// const result = {};
 
-const addToCategory = (product) => {
-  if (result[product.category]) {
-    result[product.category].push(product.name);
-  } else {
-    result[product.category] = [product.name];
-  }
-};
+// const addToCategory = (product) => {
+//   if (result[product.category]) {
+//     result[product.category].push(product.name);
+//   } else {
+//     result[product.category] = [product.name];
+//   }
+// };
 
-function categoriseProducts(products, addToCategory) {
-  for (let i = 0; i < products.length; i++) {
-    addToCategory(products[i]);
-  }
-}
+// function categoriseProducts(products, addToCategory) {
+//   for (let i = 0; i < products.length; i++) {
+//     addToCategory(products[i]);
+//   }
+// }
 
-categoriseProducts(products, addToCategory);
+// categoriseProducts(products, addToCategory);
 
-console.log(result);
+// console.log(result);
 
-restult[products.category] = [product.name];
+// restult[products.category] = [product.name];
 
-result[product.category].push(print);
+// result[product.category].push(print);
+
+con;

@@ -1,3 +1,9 @@
 what is clouser?
 what are higher order function?
 Remove duplicate array elements
+Solid principles
+event loop
+micoservices
+restful apis
+how to optimize performance
+test cases

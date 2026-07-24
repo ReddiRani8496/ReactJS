@@ -6,3 +6,4 @@ what is autocomplete in input tag
 difference b/w padding and margin
 missing number
 sum of even numbers using map,filter,reduce
+What if project comes to an end in this month and there is one month gap to start new project which requires new tech stack, how will utilize that one month

@@ -1,6 +1,6 @@
 Introduction
 Explain company project
-what is my role in it 
+what is my role in the project?
 difference b/w readonly and disabled in input tag
 what is autocomplete in input tag
 difference b/w padding and margin

@@ -9,18 +9,6 @@ const PRODUCTS = [
   { id: 5, name: "Smart Watch", category: "Electronics", price: 200 },
 ];
 
-// Custom Debounce Hook
-// function useDebounce(value, delay = 300) {
-//   const [debouncedValue, setDebouncedValue] = useState(value);
-
-//   useEffect(() => {
-//     const handler = setTimeout(() => setDebouncedValue(value), delay);
-//     return () => clearTimeout(handler);
-//   }, [value, delay]);
-
-//   return debouncedValue;
-// }
-
 function useDebounce(value, delay = 300) {
   const [debounceValue, setDebounceValue] = useState(value);
 

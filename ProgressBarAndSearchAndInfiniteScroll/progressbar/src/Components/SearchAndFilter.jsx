@@ -28,7 +28,6 @@ export function SearchAndFilter() {
 
   const categories = ["All", ...new Set(PRODUCTS.map((p) => p.category))];
 
-  // Filter products efficiently using useMemo
   const filteredProducts = useMemo(() => {
     console.log("inside memo ", debouncedSearch);
     return PRODUCTS.filter((item) => {
@@ -48,7 +47,6 @@ export function SearchAndFilter() {
     >
       <h2>Search & Filter Products</h2>
 
-      {/* Search Input */}
       <input
         type="text"
         placeholder="Search products..."
@@ -58,7 +56,6 @@ export function SearchAndFilter() {
       />
 
       <div style={{ display: "flex", gap: "12px", marginBottom: "16px" }}>
-        {/* Category Select */}
         <select
           value={category}
           onChange={(e) => setCategory(e.target.value)}
@@ -84,7 +81,6 @@ export function SearchAndFilter() {
         </label>
       </div>
 
-      {/* Product List */}
       <ul>
         {filteredProducts.map((p) => (
           <li key={p.id} style={{ marginBottom: "8px" }}>

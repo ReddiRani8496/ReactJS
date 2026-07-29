@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
 
-// Mock product data
 const PRODUCTS = [
   { id: 1, name: "Wireless Headphones", category: "Electronics", price: 99 },
   { id: 2, name: "Mechanical Keyboard", category: "Electronics", price: 150 },
@@ -68,7 +67,6 @@ export function SearchAndFilter() {
           ))}
         </select>
 
-        {/* Price Slider */}
         <label>
           Max Price: ${maxPrice}
           <input

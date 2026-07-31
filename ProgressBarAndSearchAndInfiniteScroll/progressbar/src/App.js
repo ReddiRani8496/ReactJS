@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import ProgressBar from "./Components/ProgressBar";
 import { SearchAndFilter } from "./Components/SearchAndFilter";

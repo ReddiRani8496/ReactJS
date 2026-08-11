@@ -4,9 +4,7 @@ function URLValidator() {
   const [input, setInput] = useState("");
   const [isValid, setIsValid] = useState(null);
 
-  function validateUrl() {
-    // Write logic to validate the url
-  }
+  function validateUrl() {}
 
   return (
     <div>

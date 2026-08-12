@@ -10,7 +10,9 @@ function URLValidator() {
     <div>
       <h1>URL Validator</h1>
 
-      <div className="container">{/* Add Input and Result */}</div>
+      <div className="container">
+        <input />
+      </div>
     </div>
   );
 }

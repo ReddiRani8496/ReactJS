@@ -32,7 +32,7 @@ function URLValidator() {
 
         {isValid !== null && (
           <p>
-            {isValid ? "✅ Valid URL" : "❌ Invalid URL"}
+            {isValid ? "Valid URL" : "Invalid URL"}
           </p>
         )}
       </div>

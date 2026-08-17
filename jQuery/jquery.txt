@@ -1,0 +1,9 @@
+jQuery is a JavaScript library that simplifies:
+
+DOM manipulation
+Event handling
+AJAX/API calls
+Animations
+Form handling
+Traversing HTML elements
+Working with browser events

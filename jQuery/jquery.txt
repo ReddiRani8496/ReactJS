@@ -7,3 +7,23 @@ Animations
 Form handling
 Traversing HTML elements
 Working with browser events
+
+
+jQuery Selectors
+
+Selectors are one of the most important concepts.
+
+ID selector
+$("#username")
+
+
+<input id="username" />
+
+Class selector
+$(".user")
+
+Element selector
+$("button")
+
+Attribute selector
+$("input[type='text']")

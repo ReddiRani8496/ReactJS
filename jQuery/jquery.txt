@@ -27,3 +27,7 @@ $("button")
 
 Attribute selector
 $("input[type='text']")
+
+Universal Selector 
+$("*")
+

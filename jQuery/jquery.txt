@@ -16,9 +16,6 @@ Selectors are one of the most important concepts.
 ID selector
 $("#username")
 
-
-<input id="username" />
-
 Class selector
 $(".user")
 

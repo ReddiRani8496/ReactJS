@@ -28,3 +28,5 @@ $("input[type='text']")
 Universal Selector 
 $("*")
 
+Extract text from input
+const name = $('#txtName').val();

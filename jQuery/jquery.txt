@@ -30,3 +30,5 @@ $("*")
 
 Extract text from input
 const name = $('#txtName').val();
+Assign value
+$('#name').text("rock");
